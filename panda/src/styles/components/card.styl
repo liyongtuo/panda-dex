@@ -1,0 +1,55 @@
+.matrix-card 
+    overflow hidden
+    border-radius 4px
+    // padding .15rem
+    // box-shadow 0 0 .1rem 0 rgba(166,183,227,0.3);
+    background: #1F2A36
+    // &:hover 
+    //     box-shadow 0 0 .1rem 0 rgba(166,183,227,0.5); 
+    &-title-bar
+        background: #222D3A
+        color color-font-second
+        font-size .16rem
+        padding .15rem .3rem
+        border-radius: 4px 4px 0 0
+        .h5 & 
+            font-size .15rem
+            padding .11rem
+    &-title
+        width 100%
+    &-right-arrow 
+        img 
+            opacity 0.6
+            width .08rem 
+            height .14rem
+            &:hover 
+                opacity 1
+    &-far
+        box-shadow 0 0 .25rem 0 rgba(166,183,227,0.3);
+        // &:hover 
+        //     box-shadow 0 0 .25rem 0 rgba(166,183,227,0.5); 
+    &-no-shadow
+        box-shadow none
+        // border 1px solid #F0F3FF
+        // &:hover
+        //     box-shadow 0 0 .05rem 0 rgba(166,183,227,0.3);
+    &-container 
+        width 100%
+        height 100%
+    &-no-padding 
+        padding 0
+        
+    &-sidebar
+        // padding .15rem
+        border-right 1px solid rgba(204,194,242,.1)
+    &-content 
+        padding .3rem
+        .h5 & 
+            padding .15rem
+    &-border
+        border-radius: 6px
+        border 1px solid color-border-dark
+        & ^[0]-content
+            padding .2rem
+        & ^[0]-no-padding ^[0]-content
+            padding .05rem

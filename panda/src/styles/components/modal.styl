@@ -1,0 +1,218 @@
+color-placeholder = color-input-tip
+hover() 
+    label 
+        color #fff
+    border-bottom-color #ffffff
+
+.modal-iframe 
+    padding .1rem
+    background-color #121C3C
+    border-radius 4px
+    margin-left .5rem
+    margin-right .5rem
+
+.matrix-modal 
+    .ant-modal-content 
+        background-color color-modal-bg
+        border-radius 4px
+        
+    .ant-modal-close
+        color #fafafe
+
+    .ant-skeleton.ant-skeleton-active .ant-skeleton-content .ant-skeleton-paragraph > li
+        background: linear-gradient(90deg, #84d3da 25%, #0acedf 37%, #91d8de 63%)
+        animation: ant-skeleton-loading 1.4s ease infinite;
+        background-size: 400% 100%;
+        border-radius: .06rem;
+    path 
+        color #fff
+
+    &-blank
+        .ant-modal-content 
+            background-color transparent
+            border-radius .04rem
+            overflow hidden
+        .ant-modal-body
+            padding 0
+    &-close 
+        position absolute
+        width .16rem
+        height .16rem
+        right .2rem
+        top .2rem
+        cursor pointer
+        &:hover
+            opacity .9
+    &-confirm
+        padding .3rem
+    &-input
+        margin auto;
+        &-container 
+            background-color color-input-placeholder
+            border-radius .06rem
+            width 100%
+            border 1px solid transparent
+            &:hover 
+                border 1px solid #61b4bb
+            &:hover
+                border 1px solid transparent
+                
+            &.disabled 
+                cursor not-allowed
+                input 
+                    cursor not-allowed
+                    &::-webkit-input-placeholder
+                        color white
+                    &::-moz-placeholder
+                        color white
+                    &:-moz-placeholder
+                        color white
+                    &:-ms-input-placeholder
+                        color white
+
+        font-size .14rem
+        width 100%
+        position relative
+        input 
+            background-color rgba(18,28,60,0)
+            padding .05rem .1rem
+            border-style hidden
+            color #fff
+            font-size .14rem
+            outline none
+            width 100%
+            caret-color color-primary
+            &::-webkit-input-placeholder
+                color color-placeholder
+            &::-moz-placeholder
+                color color-placeholder
+            &:-moz-placeholder
+                color color-placeholder
+            &:-ms-input-placeholder
+                color color-placeholder
+        &-top 
+            width 100%
+            display flex 
+            padding .01rem 0
+            label
+                text-align left
+                color #fff
+                padding 0 .01rem
+                font-size .16rem
+            &:hover
+                hover() 
+            &-focus 
+                hover() 
+        &-bottom 
+            height .18rem
+            width 100%
+        &-err 
+            color color-error-msg
+            font-size .12rem
+            display flex
+            padding .01rem .1rem
+            margin-bottom 2px
+        &-tip 
+            color color-input-tip
+            width 2.25rem
+            position absolute
+            left 108%
+            top 50%
+            transform translateY(-50%)
+            opacity 0
+            transition opacity 0.5s
+            text-align justify
+            &-focus 
+                opacity 1
+        &-append 
+            position absolute
+            right .05rem
+    &-select 
+        // width 100%
+        .ant-select-selection
+            // width 100%
+            border-style none 
+            background-color color-input-placeholder
+            outline none
+        .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active
+            border-style none
+            box-shadow none
+        .ant-select-selection--single
+            height .31rem
+        .ant-select
+            width 100%
+            color #fff
+        .ant-select-selection__placeholder, .ant-select-search__field__placeholder
+            color #354e71
+        &-dropdown
+            // border-radius 0
+            background-color color-input-placeholder
+        label
+            text-align left
+            color #fff
+            padding 0 .01rem
+            font-size .16rem
+        &-bottom 
+            height .18rem
+            width 100%
+        &-err 
+            color #FBCC82
+            font-size .14rem
+            display flex
+            padding .01rem .1rem
+    &-datepicker
+        input 
+            background-color color-input-placeholder
+            border-style hidden
+            color white
+        label
+            text-align left
+            color #fff
+            padding 0 .01rem
+            font-size .16rem
+            margin .05rem 0
+        i
+            display none
+        &-bottom 
+            height .18rem
+            width 100%
+        &-err 
+            color #FBCC82
+            font-size .14rem
+            display flex
+            padding .01rem .1rem
+.modal-upload
+    label 
+        text-align left
+        color #fff
+        padding 0 .01rem
+        font-size .16rem
+    &-container
+        position relative
+        width 1.2rem
+        height 1.2rem
+        border-radius .08rem
+        margin 0 .02rem
+        margin-right .15rem
+        background-color color-input-placeholder
+        img
+            max-width 1.1rem
+            max-height 1.1rem
+        &:hover ^[0]-hover 
+            opacity 1
+    &-mask 
+        position absolute 
+        top 0
+        left 0 
+        bottom 0 
+        right 0
+        background rgba(0 0 0 .5)
+    &-hover 
+        position absolute 
+        top 0
+        left 0 
+        bottom 0 
+        right 0
+        background rgba(0 0 0 .5)
+        opacity 0
+        transition all .5s

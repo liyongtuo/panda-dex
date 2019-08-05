@@ -1,0 +1,84 @@
+color-finish = color-primary
+color-unfinish = #CCD2DE
+transition-time = .5s
+.matrix-step 
+    &-h5 
+        text-align: left;
+        color: color-font-third;
+        &-done 
+            color color-primary
+    display flex
+    &-item 
+        position relative
+        display flex 
+        flex-direction column 
+        align-items center
+        width 2.5rem
+    &-icon 
+        width .22rem
+        height .22rem
+        display flex 
+        justify-content center
+        align-items center
+        color #fff
+        font-size .2rem
+        font-weight bold
+        transition all transition-time
+        // background url('images/step_grey.png') no-repeat 100% 100%
+        &.finish 
+            color color-primary
+            // background url('images/step_blue.png') no-repeat 100% 100%
+    &-finish-icon 
+        width .22rem
+        height .22rem
+        // background url('images/finish_grey.png') no-repeat 100% 100%
+        &.finish 
+            color color-primary
+            // background url('images/finish_blue.png') no-repeat 100% 100%
+    &-fail-icon 
+        width .22rem
+        height .22rem
+        // background url('images/fail_grey.png') no-repeat 100% 100%
+    &-line
+        &-before 
+            position absolute 
+            left 0 
+            top .1rem
+            width 1.05rem
+            height 2px
+            background-color color-unfinish
+            transition all transition-time
+            &.finish 
+                background-color color-finish 
+            &.fail 
+                background-color transparent
+                border 1px dashed color-unfinish
+                left 0.01rem
+        &-after
+            position absolute 
+            right 0 
+            top .1rem
+            width 1.05rem
+            height 2px
+            transition all transition-time
+            background-color color-unfinish
+            &.finish 
+                background-color color-finish 
+            &.fail 
+                background-color transparent
+                border 1px dashed color-unfinish
+                right 0.01rem
+    &-num 
+        margin-left .01rem
+        margin-top .01rem
+    &-content 
+        margin-top .1rem
+        color color-unfinish
+        transition all transition-time
+        &-small
+            font-size .12rem
+        &-large 
+            font-size .16rem
+        &.finish 
+            color color-finish
+

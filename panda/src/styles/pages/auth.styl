@@ -1,0 +1,167 @@
+.auth
+    .h5 &
+        height calc(100vh - .44rem)
+    position relative
+    background url(images/auth/bg_transparent.png) no-repeat 100% 100% 
+    background-position center center
+    background-size: cover
+    width 100%
+    min-height 6.5rem
+    height calc(100vh - 1.6rem)
+    overflow hidden
+    a 
+        color color-primary
+        &:hover 
+            color lighten(color-primary, 30%)
+    &:before 
+        content: ''
+        position: absolute
+        z-index: -1
+        // background: linear-gradient(to right, #212C39 50%, #24303D, 50%)
+        background: linear-gradient(to right, #212C39 50%, #24303D 50%);
+        top: 0
+        bottom 0
+        left 0
+        right 0
+    &:after 
+        content: ''
+        z-index: -1
+        position: absolute
+        background: linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0))
+        opacity: 0.3
+        top: 0
+        bottom 0
+        left 0
+        right 0
+.container 
+    // margin-top .6rem
+    width 100%
+    height 100%
+    
+.codepicker 
+    width 1.2rem
+    a 
+        text-decoration none
+        color #fff
+        &:hover 
+            color color-primary
+
+.register
+    // width 4rem
+    position absolute 
+    left 50% 
+    top 50%
+    transform translate(-50%, -50%)
+    text-align center
+    .h5 & 
+        position absolute 
+        left 50%
+        top .8rem
+        transform translateX(-50%)
+        text-align: center
+    &-tabPane 
+        padding-left 5rem
+        .h5 & 
+            padding-left 3rem
+    &-checkbox 
+        .h5 &
+            width 3rem
+        width 5rem
+        relative-center(-50%)
+        text-align: left
+    &-codepicker 
+        width .6rem
+        a 
+            text-decoration none
+            color #fff
+            &:hover 
+                color color-primary
+    &-tabs 
+        display flex
+    &-tab 
+        font-size .16rem
+        a   
+            color white
+            &:hover 
+                color lighten(color-primary, 30%)
+        &-active
+            font-size .17rem
+            a 
+                padding-bottom .05rem
+                border-bottom 1.5px solid color-primary
+                color color-primary
+                &:hover 
+                    color lighten(color-primary, 30%)
+.matrix-captcha
+    height .23rem
+    border-radius .06rem
+    overflow hidden
+    display float
+    img 
+        background-color #fff
+        height .25rem
+        width auto
+        transform translate(-.03rem, -.03rem)
+.login 
+    position absolute 
+    left 50% 
+    top 10%
+    transform translateX(-50%)
+    .h5 &
+        top .4rem
+
+.check-code 
+    color color-input-label
+    text-align right
+    margin-right .1rem
+    font-size .14rem
+    a 
+        color color-primary
+        &:hover 
+            color lighten(color-primary, 30%)
+    &-loading 
+        height .15rem
+        width .25rem
+
+.forget-pass 
+    position absolute 
+    left 50% 
+    top 15%
+    transform translateX(-50%)
+    width 9.5rem 
+    height 5rem 
+    background: color-modal-bg;
+    border-radius .2rem 
+    text-align: center
+    .h5 & 
+        background: transparent
+        width 3rem
+
+    &:after
+        content: ''
+        position absolute 
+        left 50% 
+        top 15%
+        z-index -1
+        background: #1E2834;
+        transform translateX(-50%)
+        width 9.5rem 
+        height 4.8rem 
+        border-radius 0 0 .2rem .2rem
+    
+    &-container 
+        position absolute
+        left 50%
+        transform translateX(-50%)
+        width 100%
+    &-step 
+        padding-left 2.7rem
+        width 7.5rem
+        .h5 &  
+            width 3rem
+            padding 0
+    
+    // &-tab-arrow 
+        
+
+

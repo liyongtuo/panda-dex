@@ -1,0 +1,201 @@
+.message
+    .help
+        background #222D3A
+        padding .1rem .2rem
+        border-radius 3px
+        display flex
+        align-items center
+        justify-content space-between
+        .clear
+            color #7396DE
+            font-size .13rem
+        .change
+            display inline-flex
+            align-items center
+            color #7396DE
+            font-size .13rem
+            cursor pointer
+        .language
+            margin-left .2rem
+            font-size .13rem
+            display inline-flex
+            align-items center
+            color #99acd3
+            border 1px solid #99acd3
+            border-radius 10px
+            padding 0 5px
+    .lists
+        list-style none
+        li
+            background #1F2A36
+            padding .2rem
+            border-radius 3px
+            margin 2px 0
+            .message-content
+                h5
+                    color #DFE0E7
+                    font-size .14rem
+                    position relative
+                    &.message-icon
+                        &::before
+                            content ''
+                            position absolute
+                            left -15px
+                            top 7px
+                            background #E25029
+                            height 6px
+                            width 6px
+                            border-radius 3px
+                pre
+                    color #A6ABBF
+                    font-size .14rem
+                    margin .2rem 0
+                    white-space pre-wrap
+                .title-time
+                    display flex
+                    align-items center
+                    justify-content space-between
+                    color #52647A
+                    font-size .12rem
+                    span
+                        a
+                            font-size .13rem
+                            color #7396DE
+
+.message-type
+    list-style none
+    li 
+        color #99acd3
+        font-size .13rem
+        cursor pointer
+        &.active
+            color #3b57dc
+        &:hover
+            font-weight bolder
+
+.chat-box
+    background #324151
+    h5
+        text-align center
+        background #3E4D5E
+        color #DFE0E7
+        padding .1rem 0
+        font-size .14rem
+        position relative
+        a
+            position absolute
+            display block
+            right 0
+            top 0
+            cursor pointer
+            padding .1rem .2rem
+            img 
+                width .1rem
+    textarea
+        background #324151
+        width 100%
+        border 0
+        outline none 
+        resize none
+        padding .1rem .2rem
+        color #DFE0E7
+        font-size .13rem
+    ul.board
+        list-style none
+        height 3rem
+        overflow auto
+        padding .2rem
+        text-align center
+        border-bottom 1px solid rgba(204, 194, 242, .1)
+        li
+            padding .05rem 0
+            .time
+                display inline-block
+                color #9095A9
+                font-size .12rem
+                padding 0 .2rem
+                border-radius 4px
+            &.sys
+                p
+                    margin .1rem 0 .05rem
+                    display inline-block
+                    color #9095A9
+                    font-size .12rem
+                    padding 0 .4rem
+                    border-radius 4px
+            &.opposite
+                .detail
+                    padding .1rem 0
+                    display flex
+                    align-items flex-start
+                    justify-content flex-start
+                    text-align left
+                    .mes
+                        background #5C7189
+                        margin-left .15rem
+                        padding .04rem .1rem
+                        border-radius 3px
+                        position relative
+                        color #DFE0E7
+                        max-width 60%
+                        &::before
+                            content ''
+                            position absolute
+                            display block
+                            left -13px
+                            top 7px
+                            width 0
+                            height 0
+                            border-left 7px solid transparent
+                            border-bottom 7px solid transparent
+                            border-top 7px solid transparent
+                            border-right 9px solid #5C7189
+                        .stime
+                            position absolute
+                            left: 0
+                            bottom: -.18rem
+                            font-size .12rem
+                            color #99acd3
+            &.self
+                .detail
+                    padding .1rem 0
+                    display flex
+                    align-items flex-start
+                    justify-content flex-end
+                    text-align right
+                    .mes
+                        background #5C7189
+                        margin-right .15rem
+                        padding .04rem .1rem
+                        border-radius 3px
+                        position relative
+                        color #DFE0E7
+                        max-width 60%
+                        &::after
+                            content ''
+                            position absolute
+                            display block
+                            right -13px
+                            top 7px
+                            width 0
+                            height 0
+                            border-right 7px solid transparent
+                            border-bottom 7px solid transparent
+                            border-top 7px solid transparent
+                            border-left 9px solid #5C7189
+                        .stime
+                            position absolute
+                            right: 0
+                            bottom: -.18rem
+                            font-size .12rem
+                            color #99acd3
+    &.disable
+        textarea
+            background #334353
+            &::placeholder
+                color #99acd3
+                font-size .12rem
+        .btns
+            background #344452
+            .btn
+                background #d1d6e1

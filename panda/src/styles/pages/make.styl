@@ -1,0 +1,323 @@
+checkboxOrRadio()
+    display block
+    width .12rem
+    height .12rem
+    border 1px solid #9ab2e5
+    margin-right .1rem
+    position relative
+    span
+        display block
+        width .06rem
+        height .06rem
+        border-radius .02rem
+        background #9ab2e5
+        margin-top .02rem
+        margin-left .02rem
+
+.pay-radio
+    checkboxOrRadio()
+    border-radius .06rem
+.pay-checkbox
+    checkboxOrRadio()
+    border-radius .02rem
+
+.disable
+    .pay-checkbox
+        cursor not-allowed
+        border 1px solid #d2d8e2
+    .matrix-pay-checkbox
+        cursor not-allowed
+        border 1px solid #d2d8e2
+    .pay-radio
+        cursor not-allowed
+        border 1px solid #d2d8e2
+
+.pays 
+    list-style none
+    display flex
+    align-items center
+    li
+        display flex
+        align-items center
+        cursor pointer
+        img 
+            height .16rem
+            margin-right .2rem
+            &:last-child
+                height .18rem
+                margin-right .4rem
+    .pay
+        .check
+            display flex
+            align-items center
+            justify-content space-between
+        > div
+            flex 1
+            > span
+                padding 0 .1rem
+                color #A6ABBF
+                font-size .14rem
+    .disable
+        cursor not-allowed
+
+.place-remark
+    .chat
+        padding .15rem
+
+// 信息头
+.item-title
+    display flex
+    align-items center
+    background #222D3A
+    border-radius .04rem
+    color #A6ABBF
+    font-size .16rem
+    height .48rem
+    padding 0 .3rem
+    margin-bottom 2px
+
+// 发布订单
+.publish
+    .publish-title
+        display flex
+        align-items center
+        justify-content space-between
+        border-bottom 1px solid rgba(72, 82, 124, .1)
+        padding .1rem 0 .2rem
+        margin-bottom 2px
+        h5
+            color #DFE0E7
+            font-size .16rem
+        .tab
+            display flex
+            align-items center
+            span
+                display block
+                height .2rem
+                width 1px
+                background #48527C
+                margin 0 .2rem
+            a
+                text-align center
+                font-size .16rem
+                color #52647A
+                ainmate
+                &.active
+                    color #DFE0E7
+    .group
+        padding .15rem .3rem
+        display flex
+        align-items center
+        justify-content space-between
+        label
+            color #A6ABBF
+            font-size .14rem
+        .item .pay
+            display flex
+            align-items center
+            a
+                margin-left .2rem
+                display flex
+                align-items center
+                img 
+                    height .16rem
+                    &:last-child
+                        height .18rem
+                        margin-left .12rem
+    .assist
+        color #52647A
+        font-size .14rem
+        padding-right .18rem
+    .explain
+        color #A6ABBF
+        font-size .14rem
+    .boundry
+        list-style none
+        display flex
+        align-items center
+        padding 0 .3rem 0 .6rem
+        li
+            flex 1
+            display flex
+            flex-direction column
+            label
+                color #A6ABBF
+                font-size .12rem
+                margin-bottom .08rem
+            > span 
+                color #52647A
+                font-size .12rem
+                margin-top .04rem
+    .times-content
+        display flex
+        flex-direction column
+        align-items flex-end
+        .times
+            list-style none
+            display flex
+            align-items center
+            padding-bottom .1rem
+            li
+                width 1.2rem
+            a img 
+                height .16rem
+        .add
+            border 1px solid #323F4D
+            border-radius .04rem
+            display flex
+            align-items center
+            justify-content center
+            color #A6ABBF
+            font-size .14rem
+            width 1.2rem
+            height .24rem
+    .publish-footer
+        display flex
+        align-items flex-end
+        justify-content space-between
+    .groups
+        label
+            width 1.3rem
+            color #fff
+        .group
+            justify-content flex-start
+            padding .05rem .3rem
+
+ul.order
+    list-style none
+    padding 0 .3rem
+    display block
+    li
+        height .45rem
+        display flex
+        align-items center
+        justify-content space-between
+        font-size .14rem
+
+.back
+    color #DFE0E7
+    font-size .16rem
+    display flex
+    align-items center
+    &:hover
+        color #DFE0E7
+    img 
+        width .08rem
+        margin-right .1rem
+
+.flex-align-center
+    display flex
+    align-items center
+
+.margin-right
+    margin-right .5rem
+
+.confirm
+    text-align right
+    padding .1rem 0
+    p
+        padding .05rem 0
+        color color-deep
+        font-size .16rem
+        font-weight bold
+        span
+            padding-left .1rem
+            font-size .16rem
+            font-weight bold
+        &.small
+            color #A6ABBF
+            font-size .14rem
+            span
+                padding-left .5rem
+                font-weight 400
+    a
+        display inline-block
+        color #99acd3
+        margin-top .2rem
+        font-size .13rem
+
+.btns
+    flexCenter(flex-end)
+    a
+        color #238FF4
+        margin-left .4rem
+        font-size .14rem
+        position relative
+        &.btn
+            display inline-flex
+            align-items center
+            justify-content center
+            text-align center
+            flex-direction column
+            width 2.06rem
+            height .34rem
+            background #238FF4
+            color #fff
+            border-radius .04rem
+            span
+                font-size .13rem
+    button 
+        margin-left .4rem
+        width 2.06rem
+        height .34rem
+        background #238FF4
+        &.ant-btn-primary
+            border-color #8ea0f5
+
+.dropdown
+    background #324151
+
+.ant-select-selection
+    border 0
+    background #18222c
+.ant-select-selection--single
+    height .24rem
+.ant-select-selection__rendered
+    // line-height .24rem
+.ant-select-dropdown-menu-item
+    color #A6ABBF
+    transition all .5s linear
+    &:hover
+        background #2E3D4C !important
+        color #fff
+.ant-select-dropdown-menu-item-selected
+    background #2E3D4C !important
+
+.ant-slider-mark-text
+    color #52647a !important
+
+.publish, .info-publish, .info-input
+    .ant-input, .ant-input-number
+        background #18222c !important
+        border 0 !important
+        outline none
+        color #A6ABBF
+        height .24rem !important
+        line-height .24rem !important
+    .ant-input-number-input
+        height .24rem !important
+        line-height .24rem !important
+        color #A6ABBF
+        font-size .14rem
+    .ant-input-number-handler
+        background #2E3D4C !important
+    .ant-input-number-handler-wrap
+        background #2E3D4C !important
+        border-left none !important
+    .ant-input-number-handler-down
+        background #2E3D4C !important
+        border-top none !important
+    .ant-time-picker-input
+        background #18222c !important
+        border 0 !important
+        outline none
+        color #A6ABBF
+        font-size .14rem
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+        color rgba(166, 171, 191, .5)
+    input:-moz-placeholder, textarea:-moz-placeholder
+        color rgba(166, 171, 191, .5)
+    input::-moz-placeholder, textarea::-moz-placeholder
+        color rgba(166, 171, 191, .5)
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder
+        color rgba(166, 171, 191, .5)

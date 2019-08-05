@@ -1,0 +1,388 @@
+blue1 = #18397C
+purple1 = #809AF6
+purple2 = #18397C
+yellow1= #FBCB80
+yellow2 = #DBA949
+yellow3 = #FBD59A
+blue2 = #3B57DC
+mint = #0ACEDF
+blue3 = #121C3C
+purple3 = #9DB1F8
+blue4 = #4D6FB3
+grey1 = #D1D6E1
+blue5 = #99ACD3
+
+.color-red
+  color #FF546C
+
+.user-property
+  padding-bottom .2rem
+
+  &-menu
+    height 6.8rem
+    li
+      font-weight 500
+    .matrix-menu .ant-menu-item
+      margin: .3rem 0 !important
+      padding-left .24rem !important
+      padding-right .24rem !important
+
+    & img
+      width .26rem
+      height .26rem
+      margin-right .2rem
+
+  .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content
+    border-left-style none
+  .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content
+    padding-left .2rem
+
+  .border-box
+    .h5 &
+      margin 0 !important
+
+.my-property
+  &-content
+    width 100%
+    min-height 4.5rem
+    color #A6ABBF
+    background-color #1F2A36
+    padding .4rem .3rem
+
+  &-title
+    background-color #222D3A
+    color #A6ABBF
+    font-size .16rem
+    display flex
+    align-items center
+    justify-content space-between
+    padding .16rem .3rem
+    border-radius .04rem
+    .h5 &
+      padding .1rem
+
+    & > div
+      font-size .16rem
+
+  &-preview
+    display flex
+    align-items center
+    margin .25rem 0
+
+    &-box1, &-box2
+      min-width 2rem
+      border-radius .1rem
+      color #ffffff
+      padding .15rem
+
+    &-box1
+      background yellow3
+      margin-right .3rem
+
+    &-box2
+      background purple3
+
+    &-common
+      color purple2
+      display flex
+
+      span
+        color blue5
+
+  &-box
+    display flex
+    flex-direction column
+    justify-content space-between
+    height 2.2rem
+    padding-bottom .2rem
+
+    &-bottom
+      color purple1
+      display flex
+      justify-content space-between
+      cursor pointer
+      flex-wrap wrap
+      & > div:hover
+        text-shadow 0 0 .1rem rgba(166,183,227,0.5)
+        color blue4
+        img
+          border-radius .8rem
+          box-shadow 0 0 .1rem rgba(166,183,227,0.5)
+
+
+    img
+      width .15rem
+      height auto
+      margin-right .05rem
+
+    a
+      margin-left .05rem
+      color blue2
+      text-decoration underline
+
+  &-group
+    &-item
+      display flex
+      align-items center
+      color #A6ABBF
+      margin-top .05rem
+      word-break break-word
+
+      .h5 &
+        & > div
+          flex 1
+
+    &-sub
+      position relative
+      left 1rem
+      color yellow2
+      display flex
+      justify-content space-between
+      width 300px
+      line-height .2rem
+      height .2rem
+
+      .h5 &
+        left 0
+
+    label
+      width 1rem
+
+      .h5 &
+        width .8rem
+
+    a
+      color #7396DE
+
+    &-btn
+      background #238FF4
+      border-radius .03rem
+      color white
+      padding .05rem 0
+      width 3rem
+      text-align center
+
+      &:hover
+        color white
+        background purple3
+
+    &-disabled
+      background grey1
+      border-radius .03rem
+      color white
+      padding .05rem 0
+      width 3rem
+      text-align center
+
+      &:hover
+        color white
+
+  &-sub-info
+    color #52647A
+    word-break break-word
+
+  &-history
+    color white
+    padding .2rem .4rem
+
+    &-title
+      font-weight blod
+      font-size .2rem
+      text-align center
+      margin .2rem
+
+    &-radio
+      display flex
+      color white
+      margin-bottom .1rem
+
+    &-content
+      height 2rem
+      overflow scroll
+      padding .1rem
+
+      &-no
+        color white
+        text-align center
+        font-size .16rem
+
+        img
+          width .6rem
+          height .6rem
+          margin-top .5rem
+          margin-bottom .2rem
+
+  &-tabs
+    .ant-tabs-bar
+      margin-bottom 0
+    .ant-tabs-nav
+      margin-left .15rem
+      .ant-tabs-tab
+        padding .15rem
+
+  &-transfer
+    color white
+
+    &-title
+      text-align center
+      font-size .2rem
+
+    &-two
+      display flex
+      justify-content space-between
+      align-items center
+      color mint
+
+    a
+      color #7396DE
+
+    &-sub
+      color yellow1
+      line-height .2rem
+      height .2rem
+
+    &-line
+      display flex
+      justify-content space-between
+      z-index 99
+
+    &-minus
+      top -0.16rem
+      position relative
+
+    &-exchange
+      width .23rem
+      height .12rem
+      margin-bottom .18rem
+      background-image url("~@/images/user/property/transfer2.png")
+      background-size cover
+
+      &:hover
+        background-image url("~@/images/user/property/transfer.png")
+
+  &-comfirm
+    &-title
+      color white
+      font-size .2rem
+      text-align center
+    &-change
+      text-align center
+      a
+        color mint
+        text-decoration underline
+
+  &-empty
+    color blue5
+    font-size .16rem
+
+    img
+      width .6rem
+      height .6rem
+
+    & > div
+      margin-top .2rem
+
+  &-qrcode
+    background-color #ffffff
+    padding .05rem
+    border-radius .03rem
+
+  &-h5-card
+    background-color #222D3A
+    border-radius 4px
+    padding .15rem .1rem .2rem
+    margin-top .1rem
+    color #A6ABBF
+
+    .withdraw
+      text-align left
+      & > div
+        width 33%
+        &:last-child
+          text-align right
+          text-overflow ellipsis
+          overflow hidden
+
+    & span
+      color #4A5C72
+    & > div
+      display flex
+      flex-direction row
+      align-items center
+      justify-content space-between
+
+    .line-top
+      border-top #48527C 1px solid
+      padding-top .15rem
+      margin-top .1rem
+
+.button
+  &-outline, &-filled, &-disabled
+    padding 0 .1rem
+    border-radius .06rem
+    border #238FF4 solid 1px
+    cursor pointer
+
+  &-outline
+    color #238FF4
+
+    &:hover
+      background-color #2B3C4F
+
+  &-disabled
+    color #A6ABBF
+    border-color #A6ABBF
+    cursor not-allowed
+
+  &-filled
+    background-color #2B3C4F
+    color #238FF4
+
+  &-yellow-line
+    padding 0 .1rem
+    border-radius .2rem
+    border yellow2 solid 1px
+    font-size .1rem
+    color yellow2
+    font-weight normal
+    display flex
+    align-items center
+
+    img
+      width auto
+      height .1rem
+
+  &-yellow
+    background-color yellow3
+    border-radius .1rem
+    padding .1rem 1rem
+    color white
+
+    &:hover
+      color white
+      background-color yellow1
+
+
+
+//antd radio样式修改
+.ant-radio-inner
+  background #08112D
+  border-color #fff
+
+.ant-radio-checked .ant-radio-inner
+  border-color #238FF4
+
+.ant-radio-inner:after
+  background-color #238FF4
+
+.ant-radio-wrapper:hover .ant-radio .ant-radio-inner,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-focused .ant-radio-inner
+  border-color #238FF4
+
+.anticon
+  color #ffffff
+.ant-input-group-addon
+  background-color #18222c !important
+  border none
+  color #a6abbf

@@ -1,0 +1,98 @@
+.matrix-btn
+    width 100%
+    cursor pointer
+    text-align center
+    padding .1rem 0
+    font-size .16rem
+    border-radius 6px
+    border-style none
+    outline none
+    color #ffffff
+    .h5 & 
+        border-radius: 4px
+    &:hover:enabled
+        background-color lighten(color-primary, 30%)
+        &.deep 
+            background-color lighten(color-deep, 10%)
+        &.light 
+            background-color lighten(color-light, 30%)
+        &.orange 
+            background-color lighten(color-orange-deep, 20%)
+        &.green 
+            background-color lighten(color-green, 20%)
+        &.red 
+            background-color lighten(color-red, 20%)
+        &.grey 
+            background-color transparent
+            border 1px solid lighten(color-grey, 20%)
+    &:active:enabled 
+        background-color darken(color-primary, 10%)
+        &.deep
+            background-color darken(color-deep, 10%)
+        &.light
+            background-color darken(color-light, 10%)
+        &.orange
+            background-color darken(color-orange-deep, 10%)
+        &.green
+            background-color darken(color-green, 10%)
+        &.red
+            background-color darken(color-red, 10%)
+        &.grey
+            background-color transparent
+            border 1px solid darken(color-grey, 10%)
+    &-primary 
+        background-color color-primary
+        &.deep 
+            background-color color-deep
+        &.light 
+            background-color color-light
+        &.orange 
+            background-color color-orange-deep
+        &.green 
+            background-color color-green
+        &.red 
+            background-color color-red
+        &.grey 
+            color color-font-second
+            background-color transparent
+            border 1px solid color-grey
+    &-loading
+        background-color lighten(color-primary, 30%)
+        &.deep 
+            background-color lighten(color-deep, 10%)
+        &.light 
+            background-color lighten(color-light, 30%)
+        &.orange 
+            background-color lighten(color-orange-deep, 20%)
+        &.green 
+            background-color lighten(color-green, 20%)
+        &.red 
+            background-color lighten(color-red, 20%)
+        &.grey 
+            background-color transparent
+            border 1px solid lighten(color-grey, 20%)
+    &-disable
+        background-color color-disable
+    &-ghost
+        background-color transparent
+        color color-primary
+        border color-primary 1px solid
+        &.white 
+            color white
+            border white 1px solid 
+        &:hover:enabled
+            background-color transparent
+            color lighten(color-primary, 30%)
+            border-color lighten(color-primary, 30%)
+        &:active:enabled 
+            background-color transparent
+            color darken(color-primary, 10%)
+            border-color darken(color-primary, 10%)
+
+    &-dots 
+        position relative 
+        top -.08rem 
+        margin 0 .03rem
+    &-svg-loading
+        height .15rem
+        width .28rem

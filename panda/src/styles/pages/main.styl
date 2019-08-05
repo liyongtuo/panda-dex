@@ -1,0 +1,689 @@
+ .main 
+    position relative
+    overflow hidden
+    min-width 12rem;
+.content {
+    padding-top: .6rem;
+    min-height: calc(100vh - 1.35rem);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.h5 {
+    min-height: calc(100vh - .44rem);
+}
+
+.h5-content {
+    min-height: calc(100vh - 1.35rem);
+}
+
+.clickable 
+    cursor pointer;
+
+.row 
+    padding: 0 .2rem;
+    .h5 &
+        padding 0;
+
+
+.main-row
+    padding .1rem .2rem
+    max-width 14rem
+    margin auto
+
+.header
+    &-h5
+        height .44rem
+        width 100%
+        background: color-primary-bg;
+    &-drawer
+        width 100%
+        position: absolute
+        overflow: auto
+        -webkit-overflow-scrolling: touch
+        z-index 1000
+        pointer-events: none
+        &.am-drawer-open 
+            pointer-events: auto
+        .am-drawer-sidebar
+            position absolute
+            top: 0
+            bottom 0
+            left 0
+            z-index 1002
+            width 2.44rem
+            height: 100vh
+            transform: translateX(-100%)
+            background: color-primary-bg
+            transition: all 0.5s ease
+            overflow: auto
+            -webkit-overflow-scrolling: touch
+            padding-bottom 1rem;
+            box-shadow: 1px 1px 2px rgba(0,0,0,.15)
+        .am-drawer-overlay
+            z-index 1001
+            position absolute
+            top 0
+            bottom 0
+            left 0 
+            right 0
+            opacity: 0
+            background-color: rgba(0, 0, 0, 0.4)
+
+    &-collapse 
+        .ant-collapse
+            background-color: transparent
+            border-style: none 
+            line-height: inherit
+            .ant-collapse-header
+                i 
+                    color color-font-fourth !important
+                padding .15rem 0 !important
+            .ant-collapse-item
+                border-style: none
+        .ant-collapse-content
+            background-color: transparent 
+            border-style none 
+            .ant-collapse-content-box
+                padding 0
+    position fixed
+    height .6rem
+    top 0
+    left 0
+    right 0
+    background #232C38
+    z-index 100
+    transition all 0.2s ease-in-out
+    border-bottom 1px solid color-border-dark
+    &.scroll
+        background color-primary-bg
+    .row
+        .nav
+            display flex
+            align-items center
+            justify-content space-between
+            .navbar
+                display flex
+                align-items center
+                height .6rem
+                .logo
+                    display flex
+                    align-items center
+                    cursor pointer
+                    img
+                        height .3rem
+                        margin-right .15rem
+                    span 
+                        color #fff
+                        font-size .18rem
+                        font-weight 100
+                .navs
+                    list-style none
+                    display flex
+                    align-items center
+                    padding 0 .3rem
+                    li
+                        padding 0 .05rem
+                        a
+                            display flex
+                            align-items center
+                            font-size .16rem
+                            height .6rem
+                            padding 0 .3rem
+                            color color-font-fourth
+                            word-spacing 1px
+                            transition all 0.15s linear
+                            &:hover
+                                color lighten(color-font-fourth, 20%)
+                            &.active
+                                border-bottom 2px solid color-orange-deep
+                                color color-white
+                                background rgba(0, 0, 0, 0.4)
+
+            .operate
+                list-style none
+                height .6rem
+                display flex
+                align-items center
+                justify-content flex-end
+                padding 0 0 0 .2rem
+                li
+                    padding 0 .2rem
+                    &:last-child
+                        padding-right 0
+                    a
+                        // color color-font-fourth
+                        word-spacing 1px
+                        &:hover
+                            color lighten(color-primary, 20%)
+                    .language
+                        color color-white
+                        display inline-block
+            .badge
+                position absolute
+                top 0
+                left 16px
+                height 14px
+                min-width 14px
+                border-radius 7px
+                font-size 12px
+                line-height 14px
+                background #ee7e07
+                text-align center
+                color #fff
+
+.main
+    &-content 
+        width: 12rem;
+        margin: auto;
+        position relative;
+        top -.3rem;
+    &-guide 
+        position relative;
+        img 
+            width 100%;
+            height auto;
+        &-title 
+            position: absolute
+            color color-font-sixth
+            font-size .3rem;
+            font-weight: bold;
+            width 100%;
+            top .8rem;
+            text-align: center;
+        &-wrapper 
+            position absolute;
+            background:linear-gradient(180deg,rgba(36,48,61,1),rgba(29,38,49,1));
+            left: 0; right 0; top 0; bottom 0;
+        &-dots 
+            margin-top .1rem;
+            @extend .flex-center;
+            transform: translateX(5px)
+        &-dot
+            display inline-block;
+            margin 5px;
+            width 5px;
+            height 5px;
+            border-radius 50%;
+            background-color: #2E3C4B;
+            &-active
+                background-color: #738495;
+        &-enter
+            margin-top .2rem;
+            text-align: center;
+            a   
+                font-size .17rem;
+                font-weight: bold;
+                color #667E95;
+                padding .1rem .45rem;
+                background:linear-gradient(-3deg,rgba(30,45,59,1),rgba(43,61,78,0));
+                border-radius: 2px;
+    &-banner-container
+        position relative
+    &-banner 
+        @extend .flex-center;
+        &-icon 
+            position: absolute;
+            top: 0; 
+            width 1.2rem;
+            height 100%;
+            @extend .flex-center;
+            font-size .3rem;
+            i
+                cursor pointer
+                color #3A4A5D;
+                &:hover 
+                    color color-primary
+            &.main-banner-left
+                left: 0;
+            &.main-banner-right 
+                right: 0;
+        &-img
+            img 
+                height 4rem;
+                width auto;
+                margin auto;
+    &-banner-h5
+        &-main 
+            img 
+                width 100vw;
+                height auto;
+        &-img 
+            img 
+                width 100vw;
+                height auto;
+    &-main-banner 
+        position relative
+        width 14.4rem;
+        height 4rem;
+        &-bg 
+            img 
+                width 100%;
+                height 100%;
+        &-content 
+            width 12rem;
+            margin 0 auto;
+            margin-top .8rem;
+        &-container 
+            position absolute;
+            width 100%;
+            left 0;
+            top 0;
+            bottom 0;
+            right 0;
+        &-title 
+            color #6D92BE;
+            font-size .36rem;
+        &-slogan
+            color #D7E7FA;
+            font-size .40rem;
+            font-weight: bold;
+            margin-top .1rem;
+        &-buttons 
+            margin-top .35rem;
+            a 
+                font-size .22rem;
+                color color-primary;
+                border 1px solid color-primary;
+                padding .08rem .6rem;
+                margin-right .35rem;
+                border-radius: 4px;
+    &-tender 
+        &-cards 
+            position relative;
+            display: flex;
+            justify-content: space-between;
+            margin-right -.13rem;
+            .h5 & 
+                flex-wrap: wrap;
+                padding 0 .08rem;
+                margin 0;
+        &-card 
+            flex 1;
+            margin-right: .13rem;
+            background: #293543;
+            border-radius: 4px;
+            padding .2rem;
+            img 
+                width .4rem;
+                height .4rem;
+            .h5 & 
+                flex-basis 45%;
+                margin-right 0;
+                margin: .05rem;
+                padding .15rem;
+                img 
+                    width .25rem;
+                    height .25rem;
+                    margin-right .1rem;
+            &-line-1
+                @extend .flex-between;
+                @extend .flex-align-center;
+                color color-font-second;
+                font-size .2rem;
+                .h5 & 
+                    flex-direction: column;
+                    align-items: flex-start;
+                    font-size: .15rem;
+                    font-weight: bold;
+            &-line-2
+                @extend .flex-between;
+                @extend .flex-align-center;
+                margin-top .15rem;
+                .h5 & 
+                    margin-top .05rem;
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+            &-volume
+                color color-font-fourth;
+                font-size .12rem;
+            &-change 
+                font-size .14rem;
+    &-notes 
+        margin .1rem 0;
+        padding .1rem 0;
+        background: #232E3A;
+        @extend .flex-center;
+        .h5 & 
+            margin 0;
+        &-content
+            @extend .flex-between;
+            color color-font-second;
+            width 10rem;
+            .h5 & 
+                display inline-block;
+                text-align: center;
+                width 85%;
+        &-main
+            >a:nth-child(2)
+                .h5 &
+                    display: none
+        &-title 
+            margin-right .2rem;
+            .h5 &  
+                margin-right: .05rem;
+                font-size .12rem;
+    &-note 
+        color color-font-second
+        a 
+            color color-font-second
+        .h5 & 
+            display inline-block;
+            white-space: nowrap;
+            width 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: .12rem;
+            font-size .12rem;
+        &-slash 
+            margin 0 .5rem;
+            .h5 & 
+                display: none;
+                font-size .12rem;
+        &-more 
+            color color-font-fourth
+            .h5 & 
+                font-size .12rem;
+    &-spot 
+        margin-top .3rem;
+        &-title 
+            color #D7E7FA;
+            font-size .26rem;
+            font-weight: bold;
+            text-align: center;
+            .h5 & 
+                font-size .17rem;
+        &-tabs 
+            display flex;
+            margin-top: .2rem;
+            padding: 0 .1rem;
+            .h5 & 
+                padding 0 .18rem;
+        &-tab 
+            color color-font-fourth;
+            padding .05rem 0;
+            font-size .16rem;
+            margin-right .3rem;
+            .h5 & 
+                font-size .14rem;
+                margin-right .15rem;
+            &.active 
+                font-weight: bold;
+                font-size .18rem;
+                color #D7E7FA;
+                border-bottom 1px solid color-orange-deep;
+                .h5 & 
+                    font-size .14rem;
+        &-table 
+            table 
+                width 100%
+            thead 
+                color color-font-fourth
+                th
+                    padding .1rem;
+            tbody 
+                tr 
+                    &:hover 
+                        background: #273341;
+                td 
+                    padding .1rem;
+        &-table-h5 
+            margin 0 .18rem;
+            &-content
+                padding .12rem 0;
+                border-bottom: 1px solid color-border;
+            &-line 
+                @extend .flex-between;
+                
+
+    &-desc 
+        padding .2rem 0;
+        background: #212D3A;
+        &-title 
+            color #D7E7FA;
+            font-size .26rem;
+            text-align: center;
+            .h5 &  
+                font-size .17rem;
+        &-content 
+            background: url(images/main/desc_bg.png) no-repeat 100% 100%
+            background-size: cover;
+            background-position: bottom;
+            padding 1.2rem;
+            display flex;
+            flex-wrap: wrap;
+            .h5 & 
+                background: url(images/main/desc_bg_h5.png) no-repeat 100% 100%
+                padding .18rem;
+                background-size contain;
+                background-position: center;
+        &-item 
+            flex-basis: 33.3%;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: .5rem;
+            text-align: left;
+            .h5 &
+                flex-basis: 100%;
+                margin-bottom: .26rem;
+                img 
+                    margin-left 0;
+            &:nth-child(3n+1)
+                flex-direction: row-reverse;
+                text-align: right;
+                .h5 & 
+                    flex-direction: row;
+                    text-align: left;
+            .h5 &:nth-child(3n+2) 
+                display: none;
+            img 
+                width .4rem;
+                height .4rem;
+                margin .2rem;
+            &-title 
+                padding-top .1rem;
+                color #D7E7FA;
+                font-size .18rem;
+                .h5 & 
+                    font-size .16rem;
+            &-sub
+                margin-top: .1rem;
+                color color-font-second;
+    &-document 
+        color color-font-second;
+        max-width 12rem;
+        margin auto;
+        height 100%;
+        margin-top .2rem;
+        &-table 
+            table
+                width 100%;
+                thead   
+                    color color-font-fourth
+                    th
+                        width 30%
+                        padding-bottom .1rem
+                        &:nth-child(4)
+                            text-align: right
+                tbody 
+                    color color-font-second
+                    td 
+                        padding .1rem 0
+                        &:nth-child(4)
+                            text-align: right
+                img 
+                    width .2rem;
+                    height .2rem;
+                    margin-right .1rem;
+                
+
+.user-operate
+    list-style none
+    padding .05rem
+    li 
+        padding .02rem 0
+        a 
+            color color-light
+            transition all .2s linear
+            &:hover
+                color color-deep
+
+.footer
+    background #1E2834
+    padding .25rem
+    .footer-title 
+        color color-font-second
+    li
+        list-style-type: none
+        margin .2rem 0
+    a 
+        color color-font-fifth
+        &:hover 
+            color lighten(color-primary, 50%)
+    .footer-links
+        img 
+            &:hover 
+                opacity .7
+    .wechat-service 
+        position relative
+        > img#wechat-service
+            position absolute 
+            top -.5rem;
+            left -0.22rem;
+            width 1rem;
+            height 1rem;
+            opacity 0;
+            transition: all 0.3s ease;
+            transform: scale(.2)
+        &:hover 
+            > img#wechat-service
+                top -1.2rem;
+                opacity 1;
+                transform: scale(1)
+
+.footer-h5 
+    border-top 1px solid color-border 
+    padding .3rem;
+    background: #1E2834
+    .footer-title 
+        color color-font-second
+        margin-top .2rem;
+    &-logo 
+        text-align center;
+        img 
+            width .5rem;
+            height .5rem;
+        margin-bottom .15rem;
+    ul 
+        list-style-type: none
+        margin-top: .1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    li 
+        flex: 1;
+    a 
+        color color-font-fifth
+        &:hover 
+            color lighten(color-primary, 50%)
+    .wechat-service 
+        position relative
+        > img#wechat-service
+            position absolute 
+            top -.5rem;
+            left -0.22rem;
+            width 1rem;
+            height 1rem;
+            opacity 0;
+            transition: all 0.3s ease;
+            transform: scale(.2)
+        &:hover 
+            > img#wechat-service
+                top -1.2rem;
+                opacity 1;
+                transform: scale(1)
+
+.notification
+    font-size .14rem
+    color #DFE0E7
+.ant-notification-notice-message
+    margin-bottom 0
+.ant-notification-notice
+    background #324151
+
+.matrix-dropdown
+    _color=rgba(0,0,0,.5)
+    position relative
+    .ant-popover-inner
+        background-color _color
+    .ant-popover-arrow
+        height 0 
+        width 0
+        background-color transparent
+        border-width 4px 
+        border-top-color _color
+        border-left-color _color
+    .ant-popover-inner-content
+        background color-modal-bg
+        border-radius: 0 0 4px 4px
+        li 
+            padding  .05rem .15rem !important
+        a   
+            font-size .14rem
+
+#language-switch
+    .ant-popover
+        top 32px !important
+
+.auth-background
+    background url(images/auth/bg_transparent.png) no-repeat fixed
+    background-position center center
+    background-color color-primary-bg
+
+.matrix-download 
+    position relative
+    text-align center
+    &-bg
+        img 
+            width 100%;
+    &-btn
+        position absolute;
+        width 100%;
+        bottom .3rem;
+        left: 0;
+        @extend .flex-center
+        a
+            @extend .flex-center
+            background-color color-primary 
+            border-radius: 3px;
+            width 3rem;
+            height .4rem;
+            color white;
+            font-size .15rem;
+            font-weight: 500;
+            img 
+                width .2rem;
+                height .2rem;
+                margin-right .1rem;
+    &-weixin 
+        position fixed;
+        background rgba(0, 0, 0, .4)
+        left 0; right 0; top 0; bottom 0;
+        img 
+            position fixed;
+            top .3rem;
+            right .3rem;
+            width 2.41rem;
+            height: 1.65rem;
+        
+.logout-h5 
+    width 100%;
+    text-align: center;
+    margin-top .3rem;
+    a 
+        font-size .15rem;
+        color color-font-second;
+        padding .12rem .45rem;
+        border 1px solid color-border
+        border-radius: 4px;
+        

@@ -1,0 +1,284 @@
+
+.finance
+  padding .1rem
+
+.finance-top
+  justify-content space-between
+  display flex
+
+.finance-caption
+  flex 1
+  //width 2.5rem
+  &.blue
+    flexCenter(space-between)
+    border-left 3px solid #819af3
+  &.yellow
+    border-left 3px solid #FBD59A
+  &.orange
+    border-left 3px solid #FB9595
+  &.pink
+    border-left 3px solid #FB9ACC
+  &.purple
+    border-left 3px solid #D2AEFB
+  padding-left .08rem
+  color #18397C
+  font-size .14rem
+  > span
+    &:nth-child(1)
+      color #18397C
+      font-size .16rem
+
+  .financeTitle
+    //display flex
+    align-items center
+    font-size .14rem
+    color #99ACD3
+    .firstTitle
+      display flex
+      align-items flex-end
+      position relative
+      > span
+        &:nth-child(1)
+          color #8EA0F5
+          font-size .30rem
+        &:nth-child(2)
+          color #8EA0F5
+          font-size .18rem
+          padding-bottom 0.05rem
+        &:nth-child(3)
+          background-color #FBCB80
+          color #ffffff
+          font-size .12rem
+          border-radius 0.12rem
+          margin-bottom 0.05rem
+          padding 0.03rem
+          margin-left 0.05rem
+      > div
+        align-items flex-start
+        height .5rem
+        > span
+          background-color #FBCB80
+          color #ffffff
+          font-size .08rem
+          border-radius 12px
+          padding 3px
+    .secoundTitle
+      display flex
+      align-items flex-end
+      padding-bottom 0.05rem
+      //justify-content center
+      > span
+        margin-top 0.1rem
+        &:nth-child(1)
+          color #18397C
+          font-size .24rem
+        &:nth-child(2)
+          color #18397C
+          font-size .12rem
+          padding-bottom 0.05rem
+
+.finance-img
+  display flex
+  align-items flex-start
+  margin-top 0.5rem
+  .sub-img
+    align-items center
+    display flex
+    flex-direction column
+    > div
+      color #BFC7EE
+      font-size .12rem
+      margin-top 0.05rem
+      text-align center
+      width 1rem
+    > img
+      width 0.38rem
+      height 0.38rem
+      margin-bottom 0.05rem
+  .line1
+    align-items center
+    > div
+      &:nth-child(1)
+        text-align center
+        color #BFC7EE
+        font-size .12rem
+        margin-bottom 0.05rem
+      &:nth-child(2)
+        //margin-top -0.4rem
+        width 1rem
+        background-color  #D5DFF3
+        height 1px
+  .line2
+    margin-top 0.23rem
+    width 1rem
+    background-color  #D5DFF3
+    height 1px
+
+.finance-center-line
+  width 1px
+  background-color  #CCC2F2
+  //height 2.7rem
+  opacity 0.1
+  margin-top 0.15rem
+  //margin-bottom 0.15rem
+
+.finance-right
+  width 4rem
+  //flex 1
+  .finance-slider
+    display flex
+    justify-content space-between
+    align-items center
+    margin-left 0.1rem
+    .ant-input-number-input
+      border 0
+      outline none
+      box-shadow 0 0 0.1rem 0 rgba(166, 183, 227, 0.3)
+      color color-light
+      height .22rem
+  .label_warning
+    color red
+    font-size 0.12rem
+    padding-left 0.1rem
+    padding-bottom -0.1rem
+  .label1
+    font-size .14rem
+    color #99ACD3
+    padding 0.1rem
+    padding-top 0.05rem
+  .label2
+    font-size .14rem
+    color #8EA0F5
+    padding 0.1rem
+  .label3
+    > span
+      &:not(:last-child)
+        font-size .14rem
+        color #8EA0F5
+        margin-left 0.1rem
+      &:last-child
+        font-size 0.12rem
+        color #99ACD3
+        margin-left 0.1rem
+
+.finance-date-btn
+  display flex
+  padding-bottom 0.19rem
+  > div
+    padding-top 0.03rem
+    text-align center
+    //width 0.48rem
+    padding-left .1rem
+    padding-right .1rem
+    height .24rem
+    border 0
+    outline none
+    border-radius .08rem
+    font-size .12rem
+    box-shadow 0 0 0.1rem 0 rgba(166, 183, 227, 0.3)
+    &:not(:last-child)
+      margin-left 0.1rem
+      margin-right 0.1rem
+    &:last-child
+      margin-left 0.1rem
+    &.choose
+      background #fff
+      color #8ea0f5
+      cursor pointer
+    &.unchoose
+      background #8ea0f5
+      color #fff
+      cursor pointer
+
+.finance-usdt
+  display flex
+  align-items flex-end
+  padding 0 0.1rem
+  margin-bottom 0.2rem
+  //padding-top 0
+  > span
+    color #8EA0F5
+    &:first-child
+      font-size .24rem
+    &:not(:first-child)
+      font-size .12rem
+      padding-bottom 0.03rem
+
+.finance-btn
+  background #8ea0f5
+  color #fff
+  display inline-block
+  text-align center
+  line-height .38rem
+  width 1.76rem
+  height .42rem
+  border-radius .08rem
+  font-size .14rem
+  &:hover
+      color white
+
+.finance-btn-unclick
+  background #A6A7A7
+  color #fff
+  display inline-block
+  text-align center
+  line-height .38rem
+  width 1.76rem
+  height .42rem
+  border-radius .08rem
+  font-size .14rem
+  &:hover
+    color white
+
+.finance-project-notice
+//justify-content flex-end
+//align-items flex-end
+  text-align center
+  color #F1B36A
+  font-size .12rem
+  border-radius 0.15rem
+  padding 0.03rem
+  padding-top 0.05rem
+  border 1px solid #FBCB80
+  margin 0.3rem
+  margin-top 0
+  margin-bottom 0.2rem
+
+.finance-project-introduce
+  .finance-project-text
+    font-size 0.14rem
+    color #18397C
+    //width 3rem
+  .finance-project-icons
+    align-items center
+    display flex
+    flex-direction column
+    cursor pointer
+    > div
+      color #18397C
+      font-size .14rem
+      padding-top 0.1rem
+    > img
+      width 0.5rem
+      height 0.5rem
+
+
+.operation
+    color #3b57dc
+    padding-left .1rem
+    text-decoration underline
+
+// 阴影盒子
+.box-finance
+  border-radius .1rem
+  box-shadow 0 0 .1rem 0 rgba(166,183,227,0.3);
+  margin-bottom .15rem
+  //display inline-block
+
+.img_notice
+  .ant-modal-content
+    background-color transparent
+    box-shadow none
+    -webkit-box-shadow none
+    .ant-modal-body
+      padding 0

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src="/charting_library/charting_library.min.js"></script>
+    <title>Matrix Market</title>
+</head>
+
+<body>
+    <script>
+        !(function (c, b, d, a) {
+            c[a] || (c[a] = {});
+            c[a].config = {
+                pid: "gwmxmck0k6@7e42e97dc379127",
+                appType: "web",
+                imgUrl: "https://arms-retcode.aliyuncs.com/r.png?",
+                enableSPA: true,
+                useFmp: true,
+                sendResource: true
+            };
+            with(b) with(body) with(insertBefore(createElement("script"), firstChild)) setAttribute("crossorigin",
+                "", src = d)
+        })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+    </script>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id='root'>
+        <div id="loader-wrapper">
+            <div id="preloader">
+            </div>
+            <div id="label">
+                Matrix Market Global
+            </div>
+        </div>
+        <style type="text/css">
+            #loader-wrapper {
+                position: fixed;
+                background: #222831;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            #preloader {
+                position: relative;
+                margin: 300px 0 0 45%;
+            }
+
+            #preloader:before {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: #000;
+                content: "";
+                position: absolute;
+                background: #393E46;
+
+                animation: preloader_before 1.8s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+            }
+
+            #preloader:after {
+                width: 32px;
+                height: 32px;
+                left: 15%;
+                border-radius: 50%;
+                /* background: ; */
+                content: "";
+                position: absolute;
+                background: #5f646c;
+                animation: preloader_after 1.8s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+            }
+
+            @keyframes preloader_before {
+                0% {
+                    transform: translateX(0px) rotate(0deg)
+                }
+
+                50% {
+                    transform: translateX(160px) scale(1.5) rotate(264deg);
+                    background: #238FF4;
+                    border-radius: 0;
+                }
+
+                100% {
+                    transform: translateX(0px) rotate(0deg);
+                }
+            }
+
+            @keyframes preloader_after {
+                0% {
+                    transform: translateX(0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateX(-160px) scale(1.5) rotate(-264deg);
+                    background: #238FF4;
+                    border-radius: 0;
+                }
+
+                100% {
+                    transform: translateX(0px)
+                }
+            }
+
+            #label {
+                margin-top: 450px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+
+            p {
+                color: #636363;
+                font-size: .889em;
+                line-height: 1.2;
+                font-family: 'Inconsolata', sans-serif;
+                text-align: center;
+
+            }
+
+            h2 {
+                color: #fafafa;
+                font-size: 1.777em;
+                line-height: 1.2;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+            }
+        </style>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+        
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+</body>
+<script type="text/javascript">
+    window.onSuccess = function (callback) {
+        window.onCheckSuccess = callback
+    };
+    window.NVC_Opt = {
+        //无痕配置 && 滑动验证、刮刮卡通用配置
+        appkey: 'FFFF0N00000000005E33',
+        scene: 'nvc_register',
+        isH5: false,
+        popUp: false,
+        renderTo: '#captcha',
+        language: localStorage.getItem('lang') === 'en-US' ? 'en' : 'cn',
+        //滑动验证长度配置
+        customWidth: 400,
+        callback: function (data) {
+            window.onCheckSuccess && window.onCheckSuccess(data)
+        }
+    };
+</script>
+<script src="//g.alicdn.com/sd/nvc/1.1.112/guide.js"></script>
+
+</html>

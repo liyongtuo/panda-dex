@@ -1,0 +1,64 @@
+<script type="text/javascript" src="./pako.min.js"></script>
+<script>
+//var ws = new WebSocket("wss://echo.websocket.org");
+//var ws = new WebSocket("wss://okexcomreal.bafang.com:10441/websocket/okcoinapi");
+var ws = new WebSocket("ws://192.168.0.128:8080/evil/websocket");
+//var ws = new WebSocket("ws://localhost:8010/websocket");
+ws.onopen = function(evt) {
+	console.log("Connection open ..."); 
+	ws.send("{'event':'ping'}");
+	//ws.send("{'event':'addChannel','parameters':{'base': 'ctxc', 'binary': '1', 'product': 'spot', 'quote': 'btc', 'type': 'ticker'}}");
+	//ws.send("{'event':'removeChannel','parameters':{'base': 'ctxc', 'binary': '1', 'product': 'spot', 'quote': 'btc', 'type': 'ticker'}}");
+	//ws.send("{'event':'addChannel','parameters':{'base': 'vena', 'binary': '1', 'product': 'spot', 'quote': 'btc', 'type': 'ticker'}}");
+	//ws.send("{'event':'addChannel','parameters':{'base': 'vena', 'binary': 1, 'limit':20, 'product': 'spot', 'quote': 'btc', 'type': 'depth'}}");
+	ws.send("{'event':'addChannel','parameters':{'base': 'vena', 'binary': 1, 'limit':20, 'product': 'spot', 'quote': 'btc', 'type': 'deal'}}");
+	setInterval(checkConnect,5000);
+};
+function ungzip(zipData,callback){
+	var unZipData = "";
+		try{
+			// Decode base64 (convert ascii to binary)
+			var strData     = atob(zipData);
+			// Convert binary string to character-number array
+			var charData    = strData.split('').map(function(x){return x.charCodeAt(0);});
+			// Turn number array into byte-array
+			var binData     = new Uint8Array(charData);
+			// Pako magic
+			var data        = pako.inflate(binData);
+           // Convert gunzipped byteArray back to ascii string:
+          unZipData     = String.fromCharCode.apply(null, new Uint16Array(data));
+        }catch(e){
+		 unZipData = zipData;//解压出现异常，说明数据未压缩。用原有数据进行操作
+		}
+	//利用回调进行处理后续操作
+	callback(unZipData);
+}
+
+ws.onmessage = function(data) {
+	console.log("decode data");
+	if (data.data instanceof Blob) {
+		var blob = data.data;
+		var reader = new FileReader();
+		reader.readAsText(blob);
+		reader.onload = function (evt) {
+			if (evt.target.readyState == FileReader.DONE) {
+				var beford = evt.target.result.length;
+			    ungzip(evt.target.result,function(result){
+				    console.log('收到消息')
+					console.log(JSON.parse(result));
+               });
+			}
+		};
+		return;
+	}
+	console.log("no blob");
+	console.log(JSON.parse(data.data));
+};
+ws.onclose = function(evt) {
+    ws.send("{'event':'removeChannel','parameters':{'base': 'btc', 'binary': 1, 'limit':20, 'product': 'spot', 'quote': 'vena', 'type': 'depth'}}");
+	console.log("Connection closed.");
+};      
+function checkConnect() {
+	ws.send("{'event':'ping'}");
+}
+</script>

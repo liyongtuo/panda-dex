@@ -1,0 +1,676 @@
+.user
+    padding-top .24rem
+    &-tabs
+        .ant-tabs-bar
+            border-bottom-style none
+        .ant-tabs-tab:hover
+            color color-deep
+        .ant-tabs-nav .ant-tabs-tab
+            font-size .16rem
+        .ant-tabs-nav .ant-tabs-tab-active
+            font-size .17rem
+            color color-font-first
+        .ant-tabs-ink-bar
+            background-color color-orange-deep
+        .ant-tabs-ink-bar
+            width 72px !important
+            margin-left 13px
+    &-tab
+        padding 0 .05rem
+        .h5 &
+            padding 0
+    .between
+        flex 1
+        .explain, label
+            display block
+            color color-light
+            font-size .13rem
+            padding .02rem
+        span
+            color color-light
+            font-size .12rem
+        .boundry
+            display flex
+            list-style none
+            li
+                padding-right .2rem
+                > span
+                    display block
+    &-avatar
+        &-set 
+            size = 1rem
+            position relative
+            width size
+            height size
+            min-width size
+            min-height size
+            border-radius 50%
+            overflow hidden
+            &:hover ^[-1]-upload
+                opacity 1
+            .h5 & 
+                size = .6rem
+                width size
+                height size
+                min-width size
+                min-height size
+                margin auto
+        &-upload
+            size = 1rem
+            position absolute
+            top 0 
+            left 0 
+            width size
+            min-width size
+            min-height size
+            height size
+            display flex 
+            align-items center 
+            justify-content center
+            font-size .20rem
+            color white
+            background-color rgba(0, 0, 0, .3)
+            opacity 0
+            .h5 & 
+                size = .6rem
+                width size
+                min-width size
+                min-height size
+                height size
+        &-uploading
+            size = 1rem
+            position absolute
+            top 0 
+            left 0 
+            width size
+            height size
+            display flex 
+            align-items center 
+            justify-content center
+            font-size .20rem
+            color white
+            background-color rgba(0, 0, 0, .3)
+            .h5 & 
+                size = .6rem
+                width size
+                height size
+.user-basic-set
+    margin-left: .3rem;
+    > div 
+        font-size: .16rem;
+    .nickname-tip
+        margin-left: .15rem;
+        color: color-orange-deep
+        .h5 & 
+            margin 0;
+            font-size .12rem;
+    .h5 & 
+        margin .15rem 0;
+        > div 
+            font-size: .14rem;  
+.security-card 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-container
+        display flex
+        .h5 & 
+            flex-wrap: wrap;
+    &-content 
+        margin 0 .45rem;
+        text-align: center;
+        padding .3rem;
+        font-size .16rem;
+        .h5 &
+            font-size .15rem;
+            margin .05rem;
+            flex 1;
+        button 
+            margin-top .4rem;
+            .h5 & 
+                margin-top .15rem;
+    &-title 
+        margin-top .25rem;
+        color color-font-first;
+        .h5 & 
+            margin-top: .15rem;
+    &-tip
+        margin-top .05rem;
+        color color-font-second;
+    
+.security-management 
+    display: flex;
+    .h5 & 
+        flex-wrap: wrap;
+    &-container 
+        flex 1;
+        margin 0 1px;
+        .h5 & 
+            flex-basis: 100%;
+
+.identity-approve
+    &-section 
+        margin-top .2rem;
+        margin-left .2rem;
+        font-size: .14rem;
+        display: flex;
+        justify-content: space-between;
+        .h5 &  
+            margin-left 0;
+            margin-top .1rem;
+    &-title 
+        @extend .bottom-line;
+        @extend .flex-align-center;
+        padding-bottom .05rem;
+        color color-orange-dark;
+        font-size .16rem;
+        .h5 &  
+            font-size .14rem;
+            border-style none;
+
+.security-setting
+    &-section 
+        display: flex;
+        justify-content: space-between;
+        font-size: .14rem;
+        color color-font-second;
+        &.line-1 
+            margin-top: .5rem;
+            .h5 & 
+                margin-top: 0;
+        &.line-2
+            margin-top: .2rem;
+            .h5 & 
+                margin-top: .1rem;
+
+.payment-setting
+    &-section 
+        @extend .flex-align-center;
+        @extend .flex-between;
+        &.line-1 
+            margin-top: .5rem;
+            .h5 & 
+                margin-top: 0;
+        &.line-2
+            margin-top: .2rem;
+            .h5 & 
+                margin-top: .1rem;
+
+.google-check 
+    .h5 & 
+        padding 0 .15rem;
+    &-title 
+        color color-font-second;
+        font-size .2rem;
+        font-weight: bold;
+
+    &-tip
+        color color-light;
+        font-size .16rem;
+        margin-top .3rem;
+        text-align center;
+        padding-bottom .15rem;
+        .h5 & 
+            @extend .bottom-line;
+            font-size .14rem;
+            color color-white;
+    &-left 
+        color color-white;
+        @extend .flex-align-center;
+    &-steps 
+        margin-top .15rem;
+        display: flex;
+        justify-content: center;
+        .h5 & 
+            // @extend .bottom-line;
+            padding-bottom .15rem;
+            justify-content: flex-start;
+            margin-left .1rem;
+            section 
+                margin-top .1rem;
+    &-tab 
+        width 7rem;
+        margin auto;
+        .h5 & 
+            width 100%;
+    &-links 
+        margin-top .2rem;
+        display flex;
+        justify-content space-between;
+        img 
+            width 1.9rem;
+            height .64rem;
+        .h5 & 
+            flex-wrap: wrap;
+            a 
+                margin-bottom .15rem;
+            img 
+                width 1.5rem;
+                height .5rem;
+            margin-bottom -.15rem;
+    &-qrcodes 
+        width 4rem;
+        margin auto;
+        display flex;
+        margin-top .3rem;
+        justify-content space-around;
+        .h5 & 
+            width 3rem;
+    &-note 
+        font-size .14rem;
+        color color-orange-deep;
+        margin-top .3rem;
+        text-align center;
+        .h5 & 
+            margin-top: .1rem;
+            text-align left;
+    &-boxs
+        width 6rem;
+        margin auto;
+        margin-top .2rem;
+        display flex;
+        justify-content: space-between;
+        .h5 & 
+            width 100%;
+    &-box 
+        width 2.7rem;
+        height 2.24rem;
+        text-align: center;
+        border 1px solid color-border-dark;
+        border-radius: 4px;
+        .h5 & 
+            width 1.6rem;
+            height: 1.7rem;
+            padding .1rem;
+    &-tip-title
+        font-size .16rem;
+        margin-top .2rem;
+        color color-font-second;
+        .h5 & 
+            font-size .14rem;
+            margin-top 0;
+    &-qrcode 
+        margin-top .2rem;
+        .h5 & 
+            margin-top .1rem;
+    &-secret 
+        font-size .18rem;
+        color color-white;
+        font-weight: bold;
+        margin-top .5rem;
+        .h5 & 
+            font-size .16rem;
+            margin-top .2rem;
+.identity-card 
+    &-title 
+        color color-font-first; 
+        font-size .2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        .h5 & 
+            margin-top .15rem;
+            font-size .13rem;
+            margin-left .1rem;
+            svg 
+                width .15rem !important;
+                height .15rem !important;
+    &-content
+        padding 0 .2rem;
+        margin-top .4rem;
+        .h5 & 
+            margin-top .3rem;
+    &-tip
+        font-size: .16rem;
+        color color-font-first;
+        .h5 &
+            font-size: .13rem;
+.recent-login 
+    &-card 
+        padding .15rem;
+        background-color #222D3A
+        margin-bottom .15rem;
+
+
+.h5-tabs
+    .h5-tabbar
+        height .4rem
+        display: flex
+        .h5-tab
+            flex: 1
+            text-align: center
+            font-size: .15rem
+            span
+                display inline-block
+                line-height: .38rem
+            .active
+                color: white
+                border-bottom: 2px solid color-orange-deep
+
+
+content-commen()
+    position relative
+    width 99.5% !important
+    margin 0 .03rem .1rem .03rem
+    border-bottom-left-radius .1rem
+    border-bottom-right-radius .1rem
+    border-top-right-radius .1rem
+    box-shadow 0 0 .1rem 0 rgba(166,183,227,0.3);
+    padding .15rem .5rem .15rem .46rem
+
+.tender-orders
+    .outline
+        width 1.5rem
+        margin 0 .05rem
+        border-radius .1rem
+    &-label
+        &-list
+            margin-left .1rem
+        &-title
+            color #A9BADA
+    &-filters
+        margin: 0 .1rem;
+        .line
+            margin-top .2rem
+            color color-font-fourth
+            label
+                display inline-block;
+                width 1rem;
+                color color-font-fourth;
+                .h5 &
+                    width 0.7rem;
+            .filter
+                padding .01rem .1rem
+                margin-right .2rem
+                color color-font-second
+                .h5 & 
+                    padding .01rem .05rem;
+                    margin-right: .1rem;
+                &.checked
+                    color #fff
+                    background-color: color-primary
+                    border-radius .04rem
+                &.unchecked
+                    &:hover
+                        color darken(#9DB1F8, 0%)
+                        cursor pointer
+            .date
+                width 1.2rem
+                margin-right .1rem
+            .ant-select-selection-selected-value
+                color color-font-second
+.outline-input
+    input
+        background-color: color-input-placeholder
+        border-radius .06rem
+        outline none
+        width 3rem
+        height .3rem
+        font-size .14rem
+        padding .05rem
+        border-style hidden
+        color color-white
+.pop-textarea
+    position relative
+    box-shadow 0 0 .1rem .03rem rgba(166, 183, 227, 0.3)
+    border-radius .06rem
+    margin-left .3rem
+    height .32rem
+    textarea
+        background-color transparent
+        border-style none
+        outline none
+        width 5rem
+        height .32rem
+        font-size .14rem
+        padding .05rem
+        resize:none
+        color color-light
+        margin-left .05rem
+    &::before
+        position: absolute;
+        content: '';
+        width: .1rem;
+        height: .1rem;
+        background-color: white;
+        left: -.05rem
+        transform: rotate(45deg)
+        top 50%;
+        margin-top -5px
+
+.user-setting
+    // padding-bottom .2rem
+
+    &-menu
+        height 6.8rem
+        li
+            font-weight 500
+        .matrix-menu .ant-menu-item
+            margin: .3rem 0 !important
+            padding-left .24rem !important
+            padding-right .24rem !important
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content
+        border-left-style none
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content
+        padding-left .2rem
+    .certification
+        _color = color-orange-deep
+        color _color
+        text-align center
+        a
+            color color-primary
+            padding .05rem .1rem
+            border 1px solid color-primary
+            border-radius .04rem
+            &:hover
+                background-color lighten(_color, 20%)
+    .security-level
+        width 2.1rem
+        height .14rem
+        border-radius .07rem
+        .h5 &
+            width 1.5rem
+            height .1rem
+            border-radius: 2px
+        &.middle
+            background linear-gradient(90deg,rgba(228,143,57,1) 60%,rgba(50,64,79,1) 60%)
+        &.low
+            background linear-gradient(90deg,rgba(155,38,55,1) 30%,rgba(50,64,79,1) 30%)
+        &.high
+            background rgba(38,155,107,1)
+
+    .line-input
+        input
+            background-color transparent
+            border-style hidden
+            outline none
+            border-bottom 1px solid color-deep
+            width 1.5rem
+            font-size .16rem
+            color #99ACD3
+    .outline-button
+        _color = color-primary
+        button
+            border 1px solid _color
+            outline none
+            font-size .12rem
+            color _color
+            border-radius .04rem
+            padding 0 .05rem
+            background-color transparent
+            &:hover:enabled
+                color lighten(_color, 30%)
+                border-color lighten(_color, 30%)
+            &:active:enabled
+                color darken(_color, 10%)
+                border-color darken(_color, 10%)
+
+.identity-card-upload
+    position relative
+    @extend .flex-around 
+    padding .2rem 0;
+    .h5 & 
+        flex-wrap: wrap;
+    &-title 
+        margin-top .2rem;
+        text-align: center;
+        font-size .16rem;
+        color color-font-second;
+        .h5 & 
+            text-align left;
+            font-size .13rem;
+    &-tip 
+        color color-orange-deep 
+        font-size .16rem;
+        margin-top .2rem;
+        .h5 & 
+            font-size .13rem;
+            margin-top .1rem;
+    &-container
+        position relative
+        width 2.8rem
+        height 2rem
+        border-radius .06rem
+        border 1px solid color-light
+        img
+            max-width 2.6rem
+            max-height 1.8rem
+        .h5 &  
+            width 3.4rem;
+            height 1.8rem;
+            img 
+                max-height: 1.6rem;
+        &:hover ^[0]-hover
+            opacity 1
+    &-mask
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        border-radius .06rem
+        z-index 10
+        background rgba(0 0 0 .5)
+        & ^[0]-container
+            border-style none
+            &:hover ^[0]-hover
+                opacity 0
+    &-hover
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        background rgba(0 0 0 .2)
+        opacity 0
+        transition all .5s
+        a
+            flex-center()
+            width 1.2rem
+            height .4rem
+            color white
+            background-color #9DB1F8
+            border-radius .11rem
+            font-size .18rem
+    &-progress
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        background rgba(0 0 0 .2)
+        transition all .5s
+        padding 0 .1rem
+        flex-center()
+    &-button
+        a
+            flex-center()
+            width 2.4rem
+            height .48rem
+            color white
+            background-color #9DB1F8
+            border-radius .11rem
+            font-size .18rem
+        &.disable
+            a
+                background-color: color-disable
+                cursor: not-allowed
+
+.button-yellow-line
+    padding 0 .1rem
+    border-radius .2rem
+    border yellow2 solid 1px
+    font-size .1rem
+    color yellow2
+    font-weight normal
+    display flex
+    align-items center
+
+    img
+      width auto
+      height .1rem
+      margin-right .08rem
+
+.detail-table
+    _color = transparent
+    padding .2rem .8rem
+    background-color _color
+    .ant-table-thead > tr > th
+        background-color _color
+    .ant-table-placeholder
+        padding 0
+    table
+        background-color _color
+
+.matrix-timepicker
+    .ant-time-picker-input
+        border 0
+        outline none
+        box-shadow 0 0 .1rem .03rem rgba(166, 183, 227, 0.3)
+        color color-light
+        height .22rem
+        line-height .22rem
+        font-size .12rem
+        padding-left .1rem
+        padding-right .1rem
+        &::placeholder
+            color color-light
+            font-size .12rem
+    .ant-time-picker-icon
+        display none
+.matrix-pay
+    &:hover
+        opacity 0.6
+
+.matrix-pay-checkbox
+    display inline-block
+    width .12rem
+    height .12rem
+    border 1px solid #9ab2e5
+    margin-right .1rem
+    position relative
+    border-radius .02rem
+    span
+        display block
+        width .06rem
+        height .06rem
+        border-radius .02rem
+        background #9ab2e5
+        margin-top .02rem
+        margin-left .02rem
+
+.border-box
+    border 1px solid color-border-dark
+    border-radius: 6px
+    background #1E2834
+    margin: 2px
+    padding: .15rem
+    .h5 &
+        background: transparent;
+        border-style: none;
+        margin: 0;
+        padding: 0;
+
+.round-border
+    border 1px solid color-border-dark
+    border-radius: 4px

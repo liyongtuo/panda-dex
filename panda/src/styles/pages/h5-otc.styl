@@ -1,0 +1,679 @@
+.otc-h5
+    .ope-top
+        padding 2.9vw 4vw
+        display flex
+        align-items center
+        justify-content space-between
+        background #24303D
+        a
+            color #7396DE
+            font-size 3.5vw
+        div a
+            display inline-flex
+            align-items center
+            justify-content center
+            border 1px solid #323F4D
+            border-radius .5vw
+            margin-right 2.7vw
+            width 16.5vw
+            height 7.5vw
+            color #DFE0E7
+            font-size 3.5vw
+    .otc-list
+        margin 3px
+        box-sizing border-box
+        border 1px solid #323F4D
+        border-radius .8vw
+        background #1E2834
+    .amount
+        display block
+        color #A6ABBF
+        font-size 3.2vw
+        padding 3vw 3.9vw 0
+        a 
+            color #7396DE
+            text-decoration none
+    .coins
+        list-style none
+        display flex
+        align-items center
+        border-bottom 1px solid rgba(72, 82, 124, 0.1)
+        li
+            padding 3.5vw 0
+            margin 0 3.9vw
+            position relative
+            a 
+                color #52647A
+                font-size 3.7vw
+            &.active a
+                color #DFE0E7
+                &::after
+                    content ''
+                    position absolute
+                    bottom 0
+                    display block
+                    width 100%
+                    height .5vw
+                    border-radius .5vw .5vw 0 0
+                    background #FFAC59
+    .orders
+        padding 2.7vw 0
+        li
+            margin-bottom 2.7vw
+            border-radius .5vw
+            background #222d3a
+            padding 2.9vw 3.5vw
+            color #6B7F98
+            .order-head
+                display flex
+                align-items center
+                justify-content space-between
+                border-bottom 1px solid rgba(72, 82, 124, 0.4)
+                padding-bottom 2.9vw
+                font-size 3.5vw
+            .order-content
+                display flex
+                align-items center
+                padding 3.9vw 0 5.9vw
+                > div
+                    flex 1
+                    display flex
+                    flex-direction column
+                    &:nth-child(2)
+                        text-align right
+                        flex 2
+                    &:nth-child(3)
+                        text-align right
+                        flex 3
+                    span 
+                        &:nth-child(1)
+                            color #4A5C72
+                            font-size 3.2vw
+                            margin-bottom 2.9vw
+                        &:nth-child(2)
+                            color #A6ABBF
+                            font-size 3.7vw
+            .order-footer
+                display flex
+                align-items center
+                justify-content space-between
+    .trade-head
+        padding 4.7vw 4.3vw
+        .m1
+            font-size 4vw 
+            color #DFE0E7 
+            margin-right .5vw
+        .m2
+            font-size 4vw 
+            color #A6ABBF
+    .trade-content
+        margin 3px
+        box-sizing border-box
+        border 1px solid #323F4D
+        border-radius .8vw
+        background #1E2834
+        padding 5.3vw 4.7vw
+    .info-title
+        display flex
+        align-items center
+        background #222D3A
+        border-radius .5vw
+        color #A6ABBF
+        font-size 4vw
+        height 9.6vw
+        padding 0 2.9vw
+        margin-bottom 2px
+        margin-top 5vw
+    .info-content
+        background #1F2A36
+        border-radius .5vw
+    .info-ul
+        list-style none
+        padding 2.8vw 2.6vw
+        display block
+        li
+            height 10vw
+            display flex
+            align-items center
+            justify-content space-between
+            font-size 3.2vw
+    .info-steps
+        font-size 3.5vw
+        margin 7vw 0 4.5vw
+        > div
+            display flex
+            align-items center
+            .icon
+                width 4.8vw
+                height 4.8vw
+                border-radius 50%
+                margin-right 2.3vw
+                display flex
+                align-items center
+                justify-content center
+                font-size 3.2vw
+        .line
+            height 2.7vw
+            width .3vw
+            margin .7vw 2.3vw
+    .info-sum
+        padding 4vw 0
+        display flex
+        align-items center
+        justify-content flex-end
+        .info-small
+            color #A6ABBF
+            font-size 3.5vw
+            width 48vw
+            display flex
+            align-items center
+            justify-content space-between
+    .info-btn
+        display flex
+        align-items center
+        justify-content flex-end
+        color #238FF4
+        font-size 3.5vw
+        .cancel
+            display inline-flex
+            align-items center
+            justify-content center
+            margin-left 5.3vw
+            width 48vw
+            height 7.5vw
+            border-radius .5vw
+            color #A6ABBF
+            border 1px solid #A6ABBF
+        .btn
+            display inline-flex
+            align-items center
+            justify-content center
+            margin-left 5.3vw
+            width 48vw
+            height 7.5vw
+            border-radius .5vw
+            color #fff
+            background #238FF4
+    .info-pays
+        .check
+            img:nth-child(1)
+                width 4vw
+                margin-right 4vw
+        .pay
+            a
+                display flex
+                align-items center
+                img 
+                    width 5.5vw   
+                    margin-right 5.4vw
+            div
+                flex 1  
+                display flex
+                align-items center
+                color #A6ABBF
+                font-size 3.5vw
+                span 
+                    display inline-flex
+                    align-items center
+                    margin-right 3vw
+                    img 
+                        height 3.7vw
+    .info-publish
+        .publish-title
+            display flex
+            align-items center
+            justify-content space-between
+            padding 2vw 0 0
+            h5
+                color #DFE0E7
+                font-size 3.7vw
+            .tab
+                display flex
+                align-items center
+                span
+                    display block
+                    height 4vw
+                    width 1px
+                    background #48527C
+                    margin 0 4vw
+                a
+                    text-align center
+                    font-size 3.7vw
+                    color #52647A
+                    ainmate
+                    &.active
+                        color #DFE0E7
+        .group
+            padding 3.7vw 2.8vw
+            display flex
+            align-items center
+            justify-content space-between
+            label
+                color #A6ABBF
+                font-size 3.2vw
+            .item .pay
+                display flex
+                align-items center
+                a
+                    margin-left 4vw
+                    display flex
+                    align-items center
+                    img 
+                        height 3.7vw
+                        &:last-child
+                            height 3.9vw
+                            margin-left 3vw
+        .assist
+            color #52647A
+            font-size 3.2vw
+            padding-right 3.9vw
+        .explain
+            color #A6ABBF
+            font-size 3.2vw
+        .boundry
+            list-style none
+            display flex
+            align-items center
+            padding 0 2.9vw 0 6vw
+            li
+                flex 1
+                display flex
+                flex-direction column
+                label
+                    color #A6ABBF
+                    font-size .12rem
+                    margin-bottom .08rem
+                > span 
+                    color #52647A
+                    font-size .12rem
+                    margin-top .04rem
+        .times-content
+            display flex
+            flex-direction column
+            align-items flex-end
+            .times
+                list-style none
+                display flex
+                align-items center
+                padding-bottom .1rem
+                li
+                    width 1.2rem
+                a img 
+                    height .16rem
+            .add
+                border 1px solid #323F4D
+                border-radius .04rem
+                display flex
+                align-items center
+                justify-content center
+                color #A6ABBF
+                font-size .14rem
+                width 1.2rem
+                height .24rem
+        .groups
+            padding 4vw 0
+            label
+                color #A6ABBF
+            .group
+                padding 1vw 0
+    .info-place
+        padding 4.1vw
+        font-size 3.2vw
+        color #A6ABBF
+        .info-lists
+            list-style none
+            li
+                display flex
+                align-items center
+                justify-content space-between
+                min-height 12vw
+                label 
+                    font-weight 400
+    .info-confirm-pays
+        list-style none
+        display flex
+        align-items center
+        li
+            display flex
+            align-items center
+            cursor pointer
+            img 
+                height 4.3vw
+                margin-left 8vw
+                &:last-child
+                    height 4.3vw
+                    margin-left 2.7vw
+    .info-message
+        padding 4vw 3.7vw
+        background #1E2834
+        margin 2px
+        border-radius 3px
+        border 1px solid #323F4D
+
+.h5-tab
+    a
+        color #4A5C71
+        font-size 4vw
+        display inline-block
+        height .44rem
+        line-height .44rem
+        margin 0 6vw
+        position relative
+        &.active
+            color #DFE0E7
+            &:after
+                content ''
+                position absolute
+                bottom 0
+                left 0
+                right 0
+                display block
+                width 100%
+                height 2px
+                border-radius 2px 2px 0 0
+                background #FFAC59
+    
+.info-filter
+    padding 4vw
+    h5
+        font-size 4vw
+        color #A6ABBF
+        padding-bottom 3.5vw
+        border-bottom 1px solid #323F4D
+    p
+        padding 3vw 0 2vw
+        color #52647A
+        font-size 3.5vw
+    a
+        display flex
+        align-items center
+        justify-content center
+        padding 1vw 0
+        border-radius 3px
+        border 1px solid #3B4657
+        color #A6ABBF
+        font-size 3.2vw
+        margin-bottom 3vw
+        &.active
+            border 1px solid #238FF4
+            background #238FF4
+            color #fff
+    img 
+        height 4.3vw
+        margin-right 2.7vw
+
+.info-chat-box
+    background #24303D
+    height 100vh
+    display flex
+    flex-direction column
+    h5
+        text-align center
+        background #232C38
+        color #DFE0E7
+        padding .1rem 0
+        font-size .14rem
+        position relative
+        border-bottom 1px solid #323F4D
+        a
+            position absolute
+            display block
+            left 0
+            top 0
+            cursor pointer
+            padding .1rem .2rem
+            img 
+                width 2vw
+    ul.board
+        flex 1
+        list-style none
+        height 3rem
+        overflow auto
+        padding .2rem
+        text-align center
+        border-bottom 1px solid rgba(204, 194, 242, .1)
+        li
+            padding .05rem 0
+            .time
+                display inline-block
+                color #9095A9
+                font-size .12rem
+                padding 0 .2rem
+                border-radius 4px
+            &.sys
+                p
+                    margin .1rem 0 .05rem
+                    display inline-block
+                    color #9095A9
+                    font-size .12rem
+                    padding 0 .4rem
+                    border-radius 4px
+            &.opposite
+                .detail
+                    padding .1rem 0
+                    display flex
+                    align-items flex-start
+                    justify-content flex-start
+                    text-align left
+                    .mes
+                        background #5C7189
+                        margin-left .15rem
+                        padding .04rem .1rem
+                        border-radius 3px
+                        position relative
+                        color #DFE0E7
+                        max-width 60%
+                        word-break break-all
+                        &::before
+                            content ''
+                            position absolute
+                            display block
+                            left -13px
+                            top 7px
+                            width 0
+                            height 0
+                            border-left 7px solid transparent
+                            border-bottom 7px solid transparent
+                            border-top 7px solid transparent
+                            border-right 9px solid #5C7189
+                        .stime
+                            position absolute
+                            left: 0
+                            bottom: -.18rem
+                            font-size .12rem
+                            color #99acd3
+            &.self
+                .detail
+                    padding .1rem 0
+                    display flex
+                    align-items flex-start
+                    justify-content flex-end
+                    text-align right
+                    .mes
+                        background #5C7189
+                        margin-right .15rem
+                        padding .04rem .1rem
+                        border-radius 3px
+                        position relative
+                        color #DFE0E7
+                        max-width 60%
+                        word-break break-all
+                        &::after
+                            content ''
+                            position absolute
+                            display block
+                            right -13px
+                            top 7px
+                            width 0
+                            height 0
+                            border-right 7px solid transparent
+                            border-bottom 7px solid transparent
+                            border-top 7px solid transparent
+                            border-left 9px solid #5C7189
+                        .stime
+                            position absolute
+                            right: 0
+                            bottom: -.18rem
+                            font-size .12rem
+                            color #99acd3
+    textarea
+        background #324151
+        width 100%
+        height 9.1vw
+        border 0
+        outline none 
+        resize none
+        padding 1vw 3vw
+        color #DFE0E7
+        font-size 3.6vw
+    .chat-submit
+        display flex
+        align-items center
+        padding 2vw 2.7vw
+        .btn
+            display flex
+            align-items center
+            justify-content center
+            margin-left 2.7vw
+            width 16vw
+            height 9.1vw
+            background #0D9BFF
+            color #FFFFFF
+            font-size 4vw
+            border-radius 3px
+    &.disable
+        textarea
+            background #334353
+            &::placeholder
+                color #99acd3
+                font-size 3.2vw
+        .btns
+            background #344452
+            .btn
+                background #d1d6e1
+
+
+.header-drawer-right
+    width 100%
+    position absolute
+    overflow auto
+    -webkit-overflow-scrolling touch
+    z-index 1000
+    pointer-events none
+    &.am-drawer-open 
+        pointer-events auto
+    .am-drawer-sidebar
+        position absolute
+        top 0
+        bottom 0
+        right 0
+        z-index 1002
+        width 64vw
+        height 100vh
+        transform translateX(100%)
+        background color-primary-bg
+        transition all 0.5s ease
+        overflow auto
+        -webkit-overflow-scrolling touch
+        box-shadow 1px 1px 2px rgba(0,0,0,.15)
+    .am-drawer-overlay
+        z-index 1001
+        position absolute
+        top 0
+        bottom 0
+        left 0 
+        right 0
+        opacity 0
+        background-color rgba(0, 0, 0, 0.4)
+.h5-order-list
+    background #222D3A
+    border-radius 5px
+    padding 2.8vw 
+    margin-bottom 4vw
+    .h
+        display flex 
+        align-items center 
+        justify-content space-between 
+        padding-bottom 2.8vw 
+        border-bottom 1px solid rgba(72, 82, 124, .4)
+    .c
+        div:first-child
+            color #4A5C72 
+            font-size 3.2vw 
+            padding 5.2vw 0 3.1vw
+        div:last-child
+            color #A6ABBF
+            font-size 3.5vw 
+        .link
+            display flex
+            align-items center
+            justify-content space-between
+            margin-top 3.1vw
+            a
+                display inline-flex
+                align-items center
+                justify-content center
+                border-radius 3px
+                color #238FF4
+                border 1px solid #238FF4
+                padding 1vw 4.9vw
+                font-size 3.2vw
+                &:last-child
+                    margin-left 3.2vw
+.h5-order-filter
+    display flex
+    align-items center
+    padding 3.2vw
+    position relative
+    a.type
+        flex 1
+        text-align center
+        color #52647A
+        font-size 3.5vw
+        &:after
+            content ''
+            display inline-block
+            width 0
+            height 0
+            border-left 1.2vw solid transparent
+            border-top 1.2vw solid #52647A
+            border-right 1.2vw solid transparent
+            border-bottom 1.2vw solid transparent
+            margin-left 2vw
+            margin-bottom -.6vw
+        &.hover
+            &:after
+                border-top 1.2vw solid transparent
+                border-bottom 1.2vw solid #52647A
+                margin-bottom .6vw
+        &.blue
+            color #238FF4;
+            &:after
+                border-top 1.2vw solid #238FF4
+            &.hover
+                &:after
+                    border-top 1.2vw solid transparent
+                    border-bottom 1.2vw solid #238FF4
+    .info-absolute
+        border 1px solid #323F4D
+        border-radius 3px
+        background #1E2834
+        padding 0 3vw
+        position absolute
+        display flex
+        flex-direction column
+        align-items flex-start
+        top 9.5vw
+        left 0
+        right 0
+        z-index 99
+        a
+            padding 2vw 0
+            color #52647A
+            font-size 3.5vw
+            &.active
+                color #238FF4
+    .split
+        width .3vw
+        height 3.2vw
+        background #52647A

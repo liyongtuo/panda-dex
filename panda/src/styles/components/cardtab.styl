@@ -1,0 +1,142 @@
+margin-size = .05rem
+content-commen()
+    position relative
+    width 99.3% !important
+    margin 0 margin-size .1rem margin-size
+    border-bottom-left-radius .1rem
+    border-bottom-right-radius .1rem
+    border-top-right-radius .1rem
+    box-shadow 0 0 .1rem 0 rgba(166,183,227,0.3);
+    padding .15rem
+    z-index 90
+
+.matrix-cardtab
+    position relative
+    &-tabs
+        margin 0
+        .ant-tabs-content
+            content-commen()
+            border-top-left-radius .1rem
+        // &:hover 
+        //     .active 
+        //         box-shadow 0 0 .1rem 0 rgba(166,183,227,0.5);
+        //     .ant-tabs-content
+        //         box-shadow 0 0 .1rem 0 rgba(166,183,227,0.5);
+        &-first 
+            // &:hover 
+            //     .active 
+            //         box-shadow 0 0 .1rem 0 rgba(166,183,227,0.5);
+            //     .ant-tabs-content
+            //         box-shadow 0 0 .1rem 0 rgba(166,183,227,0.5);
+            .ant-tabs-content
+                content-commen()
+    &-tabbar 
+        pointer-events auto
+        margin .1rem margin-size 0 margin-size
+    &-append
+        position absolute
+        top .25rem
+        right .2rem
+    &-tab
+        _false-color = #f0f5ff
+        position relative
+        color color-light
+        font-size .15rem
+        font-weight 500
+        width 1.5rem
+        height .5rem
+        cursor pointer
+        background-color _false-color
+        border-top-left-radius .1rem
+        border-top-right-radius .1rem
+        &:hover 
+            color darken(color-light, 20%)
+            background-color lighten(_false-color, 20%)
+        &:hover &-append-top
+            background-color lighten(_false-color, 20%)
+        &.active 
+            z-index 98
+            box-shadow 0 0 .1rem 0 rgba(166,183,227,0.3);
+            background-color #fff
+            position relative
+            color color-deep
+        &.active &-append-top
+            background-color #fff
+            box-shadow 0 .1rem 0 0 rgba(256,256,256,1);
+        &-append 
+            &-top 
+                content ""
+                position absolute 
+                width 1.5rem
+                height .1rem
+                bottom 0
+                left 0 
+                background-color _false-color
+                box-shadow 0 .1rem 0 0 rgba(256,256,256,0);
+            &-bottom 
+                position absolute 
+                bottom -.1rem
+                left 0
+                z-index -1
+                height .1rem
+                width .1rem
+                background:
+                    -webkit-radial-gradient(
+                        100% 100%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        _false-color 0%
+                    )
+                background:
+                    -moz-radial-gradient(
+                        100% 100%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        _false-color 0%
+                    )
+            &-after
+                size = .1rem 
+                position absolute
+                right -.1rem
+                z-index 99
+                bottom 0
+                width size 
+                height size 
+                box-shadow 0 .1rem 0 0 rgba(256,256,256,1);
+                background:
+                    -webkit-radial-gradient(
+                        100% 0%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        #fff 0%
+                    )
+                background:
+                    -moz-radial-gradient(
+                        100% 0%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        #fff 0%
+                    )
+            &-before
+                size = .1rem 
+                position absolute
+                left -.1rem
+                z-index 99
+                bottom 0
+                width size 
+                height size 
+                box-shadow 0 .1rem 0 0 rgba(256,256,256,1);
+                background:
+                    -webkit-radial-gradient(
+                        0% 0%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        #fff 0%
+                    )
+                background:
+                    -moz-radial-gradient(
+                        0% 0%, 
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 71%,
+                        #fff 0%
+                    )

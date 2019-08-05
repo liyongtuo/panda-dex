@@ -1,0 +1,97 @@
+color-placeholder = color-input-tip
+hover() 
+    label 
+        color #fff
+    border-bottom-color #ffffff
+.matrix-input
+    font-size .16rem
+    width 100%
+    position relative
+    input 
+        background-color transparent
+        border-style hidden
+        color #fff
+        font-size .16rem
+        outline none
+        width 100%
+        padding 0 .1rem
+        caret-color color-primary
+        &::-webkit-input-placeholder
+            color color-placeholder
+        &::-moz-placeholder
+            color color-placeholder
+        &:-moz-placeholder
+            color color-placeholder
+        &:-ms-input-placeholder
+            color color-placeholder
+    .h5 & 
+        input 
+            font-size .14rem;
+            padding 0 .1rem;
+    &-label
+        text-align left
+        color color-input-label
+        font-size .16rem
+        .h5 & 
+            font-size .14rem
+    &-top 
+        display flex
+        padding .08rem 0 
+        position relative
+        background-color: color-input-placeholder
+        border-radius: 6px
+        transition all .5s
+        &:hover
+            label 
+                color #fff
+        .h5 & 
+            padding .05rem 0;
+    &-disabled 
+        position absolute 
+        width 100%
+        height 100% 
+        cursor not-allowed
+        z-index 3
+        background-color transparent
+    &-focus 
+        & ^[0]-top 
+            label 
+                font-size .14rem
+                transform translateY(-.25rem)
+                color #fff
+        & ^[0]-bottom-line
+            width 100%
+        & ^[0]-tip 
+            opacity 1
+    &-bottom-line 
+        height 1px
+        width 0
+        position absolute 
+        left 0
+        bottom 0
+        transition all .5s
+        background-color #fff
+    &-bottom 
+        height .1rem
+        width 100%
+        // padding .05rem 0
+    &-err 
+        color color-error-msg
+        font-size .1rem
+        display flex
+        i 
+            color color-error-msg
+    &-tip 
+        color color-input-tip
+        width 2.25rem
+        position absolute
+        left 108%
+        top 50%
+        transform translateY(-50%)
+        opacity 0
+        transition opacity 0.5s
+        text-align justify
+    &-append 
+        position absolute
+        right .05rem
+        

@@ -1,0 +1,166 @@
+@import './length'
+@import './color'
+@import './position'
+@import './margin'
+@import './padding'
+@import './font'
+@import './flex'
+@import './animate'
+@import './fun'
+@import './hack'
+    
+.width-800
+    width 8rem
+
+.click-primary 
+    _color = color-primary
+    color _color 
+    cursor pointer
+    &:hover 
+        color lighten(_color, 30%)
+
+.click-light
+    _color = color-primary
+    color _color
+    cursor pointer
+    svg 
+        fill _color
+    &:hover 
+        color lighten(_color, 30%)
+        svg 
+            fill lighten(_color, 30%)
+.click-deep 
+    _color = #3B57DC
+    color _color
+    cursor pointer
+    svg 
+        fill _color
+    &:hover 
+        color lighten(_color, 30%)
+        svg 
+            fill lighten(_color, 30%)
+
+.click-darkblue 
+    _color = color-primary
+    color _color
+    cursor pointer
+    svg 
+        fill _color
+    &:hover 
+        color lighten(_color, 30%)
+        svg 
+            fill lighten(_color, 30%)
+.click-lightblue 
+    _color = #99ACD3
+    color _color
+    cursor pointer
+    svg 
+        fill _color
+    &:hover 
+        color lighten(_color, 30%)
+        svg 
+            fill lighten(_color, 30%)
+.bottom-line 
+    border-bottom 1px solid rgba(204,194,242,.1)
+
+.right-line 
+    border-right 1px solid rgba(204,194,242,.1)
+
+.underline-click
+    _color = color-primary
+    cursor pointer
+    a
+        color _color 
+        border-bottom 1px solid _color
+.underline-click-blue
+    _color = #3B57DC
+    cursor pointer
+    color _color 
+    border-bottom 1px solid _color
+    a
+        color _color 
+        border-bottom 1px solid _color
+.underline-click-light
+    _color = #99ACD3
+    cursor pointer
+    color _color 
+    border-bottom 1px solid _color
+    a
+        color _color 
+        border-bottom 1px solid _color
+.click-disabled
+    _color = #99ACD3
+    a
+        color _color 
+        &:hover 
+            cursor not-allowed
+cli-btn-common() 
+    display inline-block
+    cursor pointer
+    padding .02rem 0
+    font-size .12rem
+    width .46rem
+    // height .22rem
+    border-radius .04rem
+    text-align center
+
+.cli-btn-fill 
+    _color = #8EA0F5
+    color white 
+    background-color _color
+    cli-btn-common()
+    &:hover 
+        background-color lighten(_color, 20%)
+.cli-btn-outline 
+    _color = #18397C
+    color _color
+    border 1px solid #F0F3FF
+    cli-btn-common()
+    :hover 
+        color lighten(_color, 20%)
+    
+.table-btn 
+    _color = color-font-second
+    border 1px solid #323F4D
+    outline none
+    color _color
+    border-radius 2px;
+    padding 0 .05rem
+    background-color transparent;
+    &:hover:enabled
+        color lighten(_color, 30%)
+        border-color lighten(_color, 30%)
+    &:active:enabled 
+        color darken(_color, 10%)
+        border-color darken(_color, 10%)
+.table-btn-fill
+    _color = color-primary
+    border 1px solid _color
+    outline none
+    font-size .14rem
+    color _color
+    background-color transparent;
+    border-radius 4px;
+    padding .01rem .04rem
+    &:hover:enabled
+        background-color lighten(_color, 30%)
+    &:active:enabled 
+        background-color darken(_color, 10%)
+
+.time-border
+    border 1px solid rgba(153,172,211,.5)
+    border-radius .04rem
+
+.download-qrcode 
+    transform: translateY(.18rem)
+    padding .1rem .3rem
+    background-color: white
+    border-radius: .05rem
+    display flex
+    flex-direction: column
+    align-items: center
+    box-shadow: 0px 2px 10px 0px rgba(149,195,248,1);
+
+
+
+

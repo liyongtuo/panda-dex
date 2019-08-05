@@ -1,0 +1,273 @@
+.matrix-spot
+    background-color: #1E2834
+    .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body
+        background: transparent;
+    .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr,
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr
+        border-bottom: none
+    .ant-table-small
+        border-style: none
+        border-radius: 0
+        .ant-table-content .ant-table-header
+            background: transparent;
+        .ant-table-expand-icon-col, .ant-table-row-expand-icon, .ant-table-row-expand-icon-cell, .ant-table-expand-icon-th
+            display none
+        .ant-table-header
+            padding-right .12rem
+        .ant-table-thead
+            th
+                color color-title-light
+                border-style: none !important
+                padding: .1rem 0 .05rem 0 !important
+                font-weight: 400
+        .ant-table-body
+            margin 0
+            padding-right .07rem
+            &::-webkit-scrollbar
+                display initial
+                width .04rem
+                border-radius: .02rem
+                color color-scrollbar
+            &::-webkit-scrollbar-track
+                background-color: color-scrollbar-bg
+                border-radius: .02rem
+            &::-webkit-scrollbar-thumb
+                border-radius: .02rem
+                padding-top: .01rem
+                background-color: color-scrollbar;
+                // outline: 1px solid slategrey;
+        .ant-table-tbody
+            margin-top .1rem !important
+        .ant-table-row
+            td
+                color color-font-primary
+                font-size: 0.13rem
+
+    .ant-table-expanded-row > td:first-child
+        display none
+
+    &-header
+        .matrix-card-container
+            padding .05rem .1rem
+
+.ticker-menu
+    border-width: .02rem
+    a
+        padding-bottom .05rem
+        margin-right .2rem
+        font-size .16rem
+        &.click-lightblue
+            color color-font-light
+        &.click-darkblue
+            position relative
+            color color-blue-primary
+            svg
+                fill color-blue-primary
+            &::after
+                content: ''
+                position absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: .29rem
+                width: .2rem
+                height: .02rem
+                background-color: color-blue-primary
+                border-radius: .02rem .02rem 0 0
+
+.h5-table
+    .ant-table, thead, table, tbody, tr, th, td
+        border-style: none !important
+    .ant-table-row
+        td
+            font-size: 0.13rem
+    .ant-table-placeholder
+        font-size: .12rem
+    .ant-table-thead
+        th
+            >div
+                font-size: 0.12rem
+            padding-left 0 !important
+            padding-right 0 !important
+    .ant-table-small > .ant-table-content > .ant-table-body
+        margin 0 .1rem
+.transparent-table
+    _color = color-background
+    padding 0
+    background-color _color
+    .ant-table-thead > tr > th
+        background-color _color !important
+    .ant-table-placeholder
+        padding 0
+        background-color _color
+    table
+        background-color _color
+.click-table
+    .ant-table-row
+        cursor pointer
+    .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td
+        background transparent;
+
+.account-assets-table
+    .ant-table-placeholder
+        background-color: #FFFFFF
+.matrix-row-selected
+    background color-input-placeholder
+
+.main-tickers-table 
+    .ant-table-thead > tr > th
+        .ant-table-column-sorter
+            right 0
+.table-sort-fix
+    right: -0.15rem
+
+.ticker-table-menu
+    .ant-table-thead > tr > th
+        &:nth-child(2)
+            .ant-table-column-sorter
+                left .5rem
+        &:nth-child(3)
+            .ant-table-column-sorters
+                position relative
+                top: 0rem
+                right: -.1rem
+            .ant-table-column-sorter
+                top: .08rem
+                right -.2rem
+    &.h5-table
+        .ant-table-row
+            td
+                padding-bottom .08rem !important
+                padding-top .08rem !important
+                font-size: 0.15rem
+        &.english
+            .ant-table-thead > tr > th
+                &:nth-child(2)
+                    .ant-table-column-sorter
+                        left .65rem
+                        top .15rem
+        .ant-table-thead > tr > th
+            &:nth-child(2)
+                .ant-table-column-sorter
+                    left .42rem
+                    top .15rem
+            &:nth-child(3)
+                .ant-table-column-sorters
+                    position relative
+                    top: 0rem
+                    right: -.1rem
+                .ant-table-column-sorter
+                    top: .07rem
+                    right -.2rem
+    &.english
+        .ant-table-thead > tr > th
+            &:nth-child(2)
+                .ant-table-column-sorter
+                    left .7rem
+
+.row-ticker-menu
+    td
+        padding .04rem 0 !important
+
+.row-rencent-orders
+    td
+        padding .04rem 0 !important
+
+.row-depth
+    td
+        font-size: .14rem
+        padding .05rem 0 !important
+
+.row-my-orders
+    td
+        font-size: .14rem
+        padding .04rem 0 !important
+
+.order-card
+    section
+        margin-top .15rem
+    label
+        color color-font-grey
+        font-size .14rem
+    p
+        color color-font-grey
+        font-size .14rem
+        margin-top .05rem
+
+.token-desc
+    margin-right .1rem
+    section
+        padding .2rem 0
+        border-bottom 1px solid color-bottom-line
+        label
+            display inline-block
+            width 1rem
+            color color-font-light
+        span
+            color color-font-primary
+
+.circle-input
+    position relative
+    input 
+        background-color color-input-placeholder
+        border-style hidden
+        outline none
+        width 2rem
+        font-size .14rem
+        border-radius: .13rem
+        padding: .02rem .1rem
+        color color-font-light
+    svg 
+        position absolute
+        right .1rem
+        top: .05rem
+        fill color-font-light
+
+.buy-percent
+    margin-top .1rem
+    flex 1
+    text-align: center
+    border-radius: 4px
+    cursor pointer
+    background-color: color-input-placeholder
+    color color-font-second
+    &:hover
+        color #fff
+        background-color: #3B475B
+    &:nth-child(n+2)
+        margin-left: .1rem
+    &.active
+        color #fff
+        background-color: #3B475B
+
+.matrix-spot-h5
+    &-menu
+        position fixed
+        opacity 0
+        transition trans
+        top: 0
+        left 0
+        right 0
+        width 100%
+        height 4rem
+        z-index 301
+        background color-modal-bg
+        pointer-events: none
+        &.show
+            opacity 1
+            pointer-events: auto
+        &-cover
+            opacity 0
+            transition trans
+            z-index 300
+            pointer-events: none
+            position fixed
+            height 100%
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            background-color: rgba(0, 0, 0, .5)
+            &.show
+                opacity 1
+                pointer-events: auto
+

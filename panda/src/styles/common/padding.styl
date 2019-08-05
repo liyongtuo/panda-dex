@@ -1,0 +1,94 @@
+.padding-x-0
+    padding-left 0 
+    padding-right 0
+.padding-x-5
+    padding 0 .05rem
+
+.padding-x-m-5
+    padding 0 -.05rem
+    
+.padding-x-10
+    padding 0 .1rem
+    
+.padding-x-15
+    padding 0 .15rem
+
+.padding-x-20
+    padding 0 .2rem
+
+.padding-x-200
+    padding 0 2rem
+
+.padding-x-300
+    padding 0 3rem
+
+.padding-x-150
+    padding 0 1.5rem
+
+.padding-x-130
+    padding 0 1.3rem
+
+.padding-x-100
+    padding 0 1rem
+
+.padding-x-30
+    padding 0 .3rem
+    
+.padding-x-40
+    padding 0 .4rem
+
+.padding-x-50
+    padding 0 .5rem
+
+.padding-x-70
+    padding 0 .7rem
+
+.padding-x-80
+    padding 0 .8rem
+
+.padding-b-20
+    padding-bottom .2rem
+
+.pb-5
+    padding-bottom .05rem
+    
+.pr-5
+    padding-right .05rem
+
+.pr-10
+    padding-right .1rem
+
+.pt-5
+    padding-top .05rem
+
+.pt-10
+    padding-top .1rem
+
+.pt-15
+    padding-top .15rem
+    
+.pb-10
+    padding-bottom .1rem
+
+.pb-15
+    padding-bottom .15rem
+    
+.pb-20
+    padding-bottom .2rem
+
+.pl-10
+    padding-left .1rem
+
+.pl-20
+    padding-left .2rem
+    
+.pt-20
+    padding-top .2rem
+
+create-padding()
+    for $i in range(5, 100, 5)
+        $j = ($i / 100)
+        .padding-{$i}
+            padding $j rem
+
+create-padding()
